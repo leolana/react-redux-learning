@@ -727,7 +727,8 @@
         <p>
           Grandes aplicações como Facebook, Instagram, WhatsApp Web, NetFlix,Yahoo Mail, Khan Academy, FlipBoard, BBC, Periscope Web,
           dentre outras, já utilizam React.js.
-          <br /> No Brasil várias empresas já estão com algum produto com React, por exemplo: Goomer, Globo, Nubank, B2W, Buscapé, Catho, OLX, Pipefy entre outras...
+          <br /> No Brasil várias empresas já estão com algum produto com React, por exemplo: Goomer, Globo, Nubank, B2W, Buscapé,
+          Catho, OLX, Pipefy entre outras...
           <br />
         </p>
       </section>
@@ -914,6 +915,136 @@
 
       <section>
         <section>
+          <h2>Static methods</h2>
+          <p>PropTypes</p>
+          <ul>
+            <li>Validar as props que são passadas para os componentes</li>
+            <li>Evitar bugs desnecessários</li>
+            <ul/>
+        </section>
+        <section>
+          <h2>PropTypes: Exemplo</h2>
+          <pre style="height: auto !important;
+            margin: 1rem;
+            font-size: 14px;
+            line-height: 20px;
+            white-space: pre-wrap;
+            word-break: break-word;">
+            <code data-trim contenteditable>
+              import PropTypes from 'prop-types';
+
+              class Greeting extends React.Component {
+                render() {
+                  return (
+                    <h1>Hello, {this.props.name}</h1>
+                  );
+                }
+              }
+              
+              Greeting.propTypes = {
+                name: PropTypes.string
+              };
+            </code>
+          </pre>
+        </section>
+        <section>
+          <h2>Default Prop Values</h2>
+          <ul>
+            <li>Definir valores default para as props</li>
+            <li>Garantir que a prop terá um valor padrão, caso o Componente não tenha especificado a prop em si.</li>
+            <ul/>
+        </section>
+        <section>
+          <h2>Default Prop Values: Exemplo</h2>
+          <pre style="height: auto !important;
+            margin: 1rem;
+            font-size: 14px;
+            line-height: 20px;
+            white-space: pre-wrap;
+            word-break: break-word;">
+          <code data-trim contenteditable>
+            class Greeting extends React.Component {
+              render() {
+                return (
+                  <h1>Hello, {this.props.name}</h1>
+                );
+              }
+            }
+            
+            // Specifies the default values for props:
+            Greeting.defaultProps = {
+              name: 'Stranger'
+            };
+            
+            // Renders "Hello, Stranger":
+            ReactDOM.render(
+              <Greeting />,
+              document.getElementById('example')
+            );
+          </code>
+        </pre>
+        </section>
+        <section>
+          <h2>Default Prop Values: Exemplo com static method</h2>
+          <pre style="height: auto !important;
+            margin: 1rem;
+            font-size: 14px;
+            line-height: 20px;
+            white-space: pre-wrap;
+            word-break: break-word;">
+          <code data-trim contenteditable>
+            class Greeting extends React.Component {
+              static defaultProps = {
+                name: 'stranger'
+              }
+            
+              render() {
+                return (
+                  <div>Hello, {this.props.name}</div>
+                )
+              }
+            }
+          </code>
+        </pre>
+        </section>
+        <section>
+          <h2>Initial State</h2>
+          <p>O seu componente pode ter um estado inicial ou props iniciais</p>
+          <pre style="height: auto !important;
+            margin: 1rem;
+            font-size: 14px;
+            line-height: 20px;
+            white-space: pre-wrap;
+            word-break: break-word;">
+          <code data-trim contenteditable>
+            class Counter extends React.Component {
+              constructor(props) {
+                super(props);
+                this.state = {count: props.initialCount};
+              }
+              // ...
+            }
+          </code>
+        </pre>
+        </section>
+      </section>
+
+      <section>
+          <h1>Performance</h1>
+          <p>React depende de algumas otimizações para ser performance, que greralmente está em seguir a style guide do react de boas práticas</p>
+          <ul>
+            <li>Usar production build</li>
+            <li>Create React App</li>
+            <li>Virtualize Long Lists</li>
+            <li>Evite Reconciliation</li>
+            <li>shouldComponentUpdate em ação</li>
+            <li>O poder de não alterar os dados</li>
+            <li>Use estrutura de dados imutáveis</li>
+          </ul>
+        </section>
+
+      <section>
+        <section>
           <h1>Extra</h1>
         </section>
         <section>
@@ -964,9 +1095,8 @@
           <small>Agora que você já conhece o básico do React, é importante continuar estudando</small>
         </p>
         <ul>
-          <li>Ciclo de vida</li>
+          <li>Redux</li>
           <li>Como lidar com eventos</li>
-          <li>Renderização condicional</li>
         </ul>
       </section>
 
@@ -1046,13 +1176,13 @@
 
       // More info https://github.com/hakimel/reveal.js#dependencies
       dependencies: [
-        { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-        { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-        { src: 'plugin/search/search.js', async: true },
-        { src: 'plugin/zoom-js/zoom.js', async: true },
-        { src: 'plugin/notes/notes.js', async: true }
+        {src: 'lib/js/classList.js', condition: function () {return !document.body.classList;}},
+        {src: 'plugin/markdown/marked.js', condition: function () {return !!document.querySelector('[data-markdown]');}},
+        {src: 'plugin/markdown/markdown.js', condition: function () {return !!document.querySelector('[data-markdown]');}},
+        {src: 'plugin/highlight/highlight.js', async: true, callback: function () {hljs.initHighlightingOnLoad();}},
+        {src: 'plugin/search/search.js', async: true},
+        {src: 'plugin/zoom-js/zoom.js', async: true},
+        {src: 'plugin/notes/notes.js', async: true}
       ]
     });
 
