@@ -1,245 +1,478 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title>Curso - Introdução ao React - Code Prestige</title>
-    <meta name="description" content="Curso de Introdução ao React da Code Prestige">
-    <meta name="author" content="Leonardo Lana">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css" id="theme">
-    <link rel="stylesheet" href="lib/css/zenburn.css"> <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="css/custom.css"> <!-- Custom CSS -->
+<head>
+  <meta charset="utf-8">
+  <title>Curso - Introdução ao React - Code Prestige</title>
+  <meta name="description" content="Curso de Introdução ao React da Code Prestige">
+  <meta name="author" content="Leonardo Lana">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Custom CSS -->
 
-    <!--[if lt IE 9]>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
-  </head>
-  <body>
+</head>
 
-    <div class="reveal">
-      <div class="slides">
-        <section data-background="images/fundo-react.jpg">
-          <h1>Introdução ao React</h1>
-          <h4>Curso introdutório a biblioteca do Facebook</h3>
+<body>
+
+  <div class="reveal">
+    <img src="images/react-logo.png" style="position:absolute;right:0;top:0;width:200px;opacity:0.2" />
+    <div class="slides">
+      <section data-background="images/fundo-react.jpg">
+        <h1>Introdução ao React</h1>
+        <h4>Aprendendo sobre React JS - A biblioteca do Facebook</h3>
           <p>
-            Instrutor: <a href="https://www.linkedin.com/in/leonardo-lucas-lana/" target="_blank">Leonardo Lana</a>
+            Instrutor:
+            <a href="https://www.linkedin.com/in/leonardo-lucas-lana/" target="_blank">Leonardo Lana</a>
           </p>
           <p>
             <small>
-              Realização: <a href="http://www.goomer.com.br" target="_blank">Goomer</a>&nbsp;&nbsp;&nbsp;
+              Realização:
+              <a href="http://www.goomer.com.br" target="_blank">Goomer</a>&nbsp;&nbsp;&nbsp;
             </small>
+          </p>
+      </section>
+
+      <section data-background="images/fundo-goomer.jpg" class="without-border">
+        <section>
+          <img height="200" data-src="images/logo-branco.png">
+          <p>
+            A Goomer nasceu para ser agente e companheira da evolução dos restaurantes. Acreditamos que a tecnologia não substitui, mas
+            potencializa o trabalho humano.
+          </p>
+        </section>
+        <section>
+          <h2>Redes Sociais</h2>
+          <p class="links-redessociais">
+            Nos acompanhe nas redes sociais!
+            <br>
+            <a href="https://www.facebook.com/leonardo.lana.14" target="_blank">Facebook</a> -
+            <a href="https://medium.com/@leolucaslana" target="_blank">Medium</a> -
+            <a href="https://twitter.com/leolucaslana" target="_blank">Twitter</a> -
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>Instrutor</h2>
+          <div id="left">
+            <img data-src="https://media.licdn.com/dms/image/C5603AQHJY9UWozUBAg/profile-displayphoto-shrink_200_200/0?e=1536192000&v=beta&t=qfIBFzxTXo1NAXa3ojTq0C-ZJNeI5-vbWO42IjropXI"
+            />
+          </div>
+
+          <div id="right">
+            <ul>
+              <li>
+                <b>Nome:</b> Leonardo Lana</li>
+              <li>
+                <b>Idade:</b> 27 anos</li>
+              <li>
+                <b>Minibio:</b> Engenheiro de Software e Agilista na Goomer e eterno estudante.</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2>Redes Sociais</h2>
+          <p class="links-redessociais">
+            Acompanhe o instrutor nas redes sociais!
+            <br>
+            <a href="https://www.facebook.com/leonardo.lana.14" target="_blank">Facebook</a> -
+            <a href="https://medium.com/@leolucaslana" target="_blank">Medium</a> -
+            <a href="https://twitter.com/leolucaslana" target="_blank">Twitter</a> -
+            <a href="https://www.linkedin.com/in/leonardo-lucas-lana/" target="_blank">LinkedIn</a>
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <h2>Requisitos</h2>
+        <ul>
+          <li>
+            <a href="https://nodejs.org/en/" target="_blank">Node (versão > 6 LTS)</a>
+          </li>
+          <li>
+            <a href="https://www.npmjs.com/" target="_blank">npm (versão > 3.x)</a>
+          </li>
+          <li>
+            <a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a>
+          </li>
+          <li>Editor de texto</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2> Aprender JavaScript </h2>
+        <p style="font-size:25px">
+          Bibliotecas/Frameworks JavaScript estão sempre surgindo, então antes de tudo você deve aprender JavaScript de verdade!!!
+        </p>
+        <ul class="lista" style="font-size:20px">
+          <li>Não se limitar ao que aprendeu na faculdade ou no trabalho</li>
+          <li>Não se limitar ao que aprendeu na faculdade ou no trabalho</li>
+          <li>Ler Livros/artigos/blogs especializados </li>
+          <li>Seguir/aprender padrões desenvolvimento</li>
+          <li>Acompanhar a comunidade JavaScript</li>
+          <li>Estudar/Ler os repositórios no GitHub de projetos JavaScript </li>
+          <li>Participe de grupos JavaScript</li>
+          <li>Pratique - Escreva Código</li>
+        </ul>
+      </section>
+
+      <section>
+        <section>
+          <h2>Conhecendo React.js</h2>
+          <p>
+            React é uma biblioteca open-source desenvolvida pelo Facebook, para construção de interfaces(Componentes) em JavaScript com
+            alta performance que permite composição e modularização de uma maneira muito simples.
           </p>
         </section>
 
-        <section data-background="images/fundo-goomer.jpg" class="without-border">
-          <section>
-            <img height="200" data-src="images/logo-branco.png">
-            <p>
-              A Goomer nasceu para ser agente e companheira da evolução dos restaurantes. Acreditamos que a tecnologia não substitui, mas potencializa o trabalho humano.
-            </p>
-          </section>
-          <section>
-            <h2>Redes Sociais</h2>
-            <p class="links-redessociais">
-              Nos acompanhe nas redes sociais! <br>
-              <a href="https://www.facebook.com/leonardo.lana.14" target="_blank">Facebook</a> -
-              <a href="https://medium.com/@leolucaslana" target="_blank">Medium</a> -
-              <a href="https://twitter.com/leolucaslana" target="_blank">Twitter</a> -
-            </p>
-          </section>
-        </section>
-
         <section>
-          <section>
-            <h2>Instrutor</h2>
-            <div id="left">
-              <img data-src="https://media.licdn.com/dms/image/C5603AQHJY9UWozUBAg/profile-displayphoto-shrink_200_200/0?e=1536192000&v=beta&t=qfIBFzxTXo1NAXa3ojTq0C-ZJNeI5-vbWO42IjropXI" />
-            </div>
-            
-            <div id="right">
-              <ul>
-                <li><b>Nome:</b> Leonardo Lana</li>
-                <li><b>Idade:</b> 27 anos</li>
-                <li><b>Minibio:</b> Engenheiro de Software e Agile Coach na Goomer e eterno estudante.</li>
-              </ul>
-            </div>
-          </section>
-          <section>
-            <h2>Redes Sociais</h2>
-            <p class="links-redessociais">
-              Acompanhe o instrutor nas redes sociais! <br>
-              <a href="https://www.facebook.com/leonardo.lana.14" target="_blank">Facebook</a> -
-              <a href="https://medium.com/@leolucaslana" target="_blank">Medium</a> -
-              <a href="https://twitter.com/leolucaslana" target="_blank">Twitter</a> -
-              <a href="https://www.linkedin.com/in/leonardo-lucas-lana/" target="_blank">LinkedIn</a>
-            </p>
-          </section>
-        </section>
-
-        <section>
-          <h2>Requisitos</h2>
-          <ul>
-            <li><a href="https://nodejs.org/en/" target="_blank">Node (versão > 6 LTS)</a></li>
-            <li><a href="https://www.npmjs.com/" target="_blank">npm (versão > 3.x)</a></li>
-            <li><a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a></li>
-            <li>Editor de texto</li>
+          <h2> Conhecendo React.js </h2>
+          <ul style="font-size:20px">
+            <li>Versão atual: 16.X</li>
+            <li>Criada por: Jordan Walke, engenheiro do Facebook</li>
+            <li>Primeiro release: Maio de 2013 na JSConf US</li>
+            <li>Utilizado por grandes empresas: Facebook, Instagram, Netflix, Sony etc...</li>
+            <li>Criação de interfaces com JavaScript</li>
+            <li>Interface reflete o estado da aplicação</li>
+            <li>Criação de componentes reutilizáveis de forma declarativa, modular e de fácil composição</li>
+            <li>Alta performance </li>
+            <li>Padronização de desenvolvimento</li>
+            <li>Fácil manutenção</li>
+            <li>Permite renderização no servidor - bom para SEO</li>
+            <li>Ecossistema moderno de desenvolvimento (Node, npm, babel, webpack, gulp etc... )</li>
+            <li>Taxa de adoção crescendo muito rápida pela comunidade JavaScript</li>
+            <li>Tudo é JavaScript</li>
           </ul>
         </section>
 
         <section>
-          <section>
-            <h2>O que é o React?</h2>
-            <p>
-              O React é uma <b>biblioteca</b> JavaScript para criação de <b>interfaces de usuário</b> em aplicações web, que foi idealizada pelo time de desenvolvimento do Facebook.
-            </p>
-          </section>
-
-          <section>
-            <ul>
-              <li>Versão atual: 16.X</li>
-              <li>Criada por: Jordan Walke, engenheiro do Facebook</li>
-              <li>Primeiro release: Maio de 2013 na JSConf US</li>
-              <li>Utilizado por grandes empresas: Facebook, Instagram, Netflix, Sony etc...</li>
-            </ul>
-          </section>
-
-          <section>
-            <h1>Mas pra que serve?</h1>
-            <p><small>O React foi desenvolvido com a seguinte missão:</small></p>
-            <p><i>"Como construir grandes aplicações com muitos dados que mudam frequentemente?"</i></p>
-          </section>
-
-          <section>
-            <ul>
-              <li>Focar somente na View</li>
-              <li>Utilizar o Virtual DOM</li>
-              <li>Trabalhar com componentes</li>
-            </ul>
-          </section>
-
+          <h1>Mas pra que serve?</h1>
+          <p>
+            <small>O React foi desenvolvido com a seguinte missão:</small>
+          </p>
+          <p>
+            <i>"Como construir grandes aplicações com muitos dados que mudam frequentemente?"</i>
+          </p>
         </section>
 
         <section>
-          <section>
-            <h1>Legal, mas... Como tudo isso funciona?</h1>
-          </section>
+          <ul>
+            <li>Focar somente na View</li>
+            <li>Utilizar o Virtual DOM</li>
+            <li>Trabalhar com componentes</li>
+          </ul>
+        </section>
 
-          <section>
-            <h1>Como já dizia o Jack Estripador:</h1>
-            <p>“Vamos por Partes”</p>
-          </section>
+      </section>
+
+      <section>
+        <section>
+          <h1>Legal, mas... Como tudo isso funciona?</h1>
         </section>
 
         <section>
-          <section>
-            <h1>Exercício 1</h1>
-          </section>
-          <section>
-            <h2>Objetivo</h2>
-            <p>Criar um aplicativo com o create-react-app</p>
-          </section>
-          <section>
-            <ol>
-              <li>Abrir o terminal</li>
-              <li>Escolher um diretório</li>
-              <li>Executar o comando <pre><code class="hlbash" data-trim contenteditable>create-react-app nome_do_projeto</code></pre>
+          <h1>Como já dizia o Jack Estripador:</h1>
+          <p>“Vamos por Partes”</p>
+        </section>
+      </section>
+
+      <section>
+        <h2> Estrututa básica de um componente</h2>
+        <p>
+          Antes de começar abra sua mente para alguns conceitos um pouco difícies de aceitar no começo ...
+        </p>
+      </section>
+
+      <section data-background-video="images/mib.mp4" data-background-video-loop>
+        <p>
+          Empty your mind...
+        </p>
+      </section>
+
+      <section>
+        <h2> Estrututa básica de um componente</h2>
+        <p style="text-align:center">
+          <img src="images/basico.png" style="width:70%" />
+        </p>
+      </section>
+
+      <section>
+        <h2>JSX</h2>
+        <p style="text-align:center">HTML dentro do JavaScript, como assim? </p>
+        <img src="images/html.gif" style="width:100%" />
+      </section>
+
+      <section>
+        <h2>JSX</h2>
+        <img src="images/jsx.png" style="width:100%" />
+      </section>
+
+
+      <section data-background="images/basico2.png">
+        <h2>JSX</h2>
+        <img src="images/basico2.png" style="width:100%" />
+      </section>
+
+      <section>
+        <h2>JSX</h2>
+        <ul>
+          <li>Opcional</li>
+          <li>É um XML para facilitar a criação dos componentes </li>
+          <li>É convertido para JavaScript</li>
+          <li>Parece HTML, mas possui algumas regras diferentes
+            <ul>
+              <li>todas tags devem ser fechadas</li>
+              <li>atributos são case-sensitive: maxLength</li>
+              <li>class fica: className</li>
+              <li>for fica: htmlFor</li>
+              <li>style recebe um objeto literal:
+                <br />&lt;h1 style={{color: "red"}}&gt;</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>JSX</h2>
+        <p>
+          As expressões javascript são avaliadas entre { }
+        </p>
+        <div style="text-align:center">
+          <img src="images/jsx-exp.png" style="width:70%" />
+        </div>
+      </section>
+
+      <section>
+        <h2>JSX</h2>
+        <p>
+          Exemplo de iteração
+        </p>
+        <div style="text-align:center">
+          <img src="images/iteracao.png" style="width:70%" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Conceitos do React.js</h2>
+        <ul>
+          <li>Virtual DOM</li>
+          <li> Props -
+            <code>this.props</code>
+          </li>
+          <li> State -
+            <code>this.state</code>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Entendendo o Virtual DOM</h2>
+        <p>
+          O Virtual DOM é uma representação leve em memória do DOM.
+          <br /> A cada mudança de estado o React renderiza o componente novamente, mas para uma melhor performance ele utiliza
+          o virtual DOM.
+        </p>
+        <p> A cada mudança de estado:</p>
+        <ul>
+          <li> Cria uma nova árvore virtual DOM</li>
+          <li> Faz um diff com a virtual DOM antiga </li>
+          <li> Atualiza a árvore DOM nativa somente onde ocorreu alguma mudança</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2> State e Props </h2>
+        <p>
+          Através das propriedades que componentes passam dados para seus filhos. (
+          <code>this.props</code>).
+          <br /> Props devem ser
+          <strong>read-only</strong>.
+          <br /> Componentes podem ter estados para gerenciar alguma lógica interna (
+          <code>this.state</code>). Somente use
+          <code>this.setState</code> para atualizar um estado. Toda vez* que atualiza o estado o
+          <code>render</code> é chamado.
+        </p>
+      </section>
+
+      <section>
+        <h2>Composição</h2>
+        <p>
+          Através da composição podemos montar componentes complexos que são divididos em componentes menores e mais simples.
+          <br />
+          <code>this.props.children</code>
+        </p>
+        <div style="text-align:center">
+          <img src="images/composicao.png" style="width:70%" />
+        </div>
+      </section>
+
+      <section>
+        <h2> Fazendo Build do React.js </h2>
+        <p>
+          <ul>
+            <li>gulp</li>
+            <li>webpack</li>
+          </ul>
+        </p>
+      </section>
+
+      <section>
+        <section>
+          <h1>Exercício 1</h1>
+        </section>
+        <section>
+          <h2>Objetivo</h2>
+          <p>Criar um aplicativo com o create-react-app</p>
+        </section>
+        <section>
+          <ol>
+            <li>Abrir o terminal</li>
+            <li>Escolher um diretório</li>
+            <li>Executar o comando
+              <pre><code class="hlbash" data-trim contenteditable>create-react-app nome_do_projeto</code></pre>
               <li>Fazer networking enquanto ele cria o seu projeto =)</li>
               <li>Abrir o projeto no seu editor de texto</li>
-              <li>Voltar ao terminal e subir o projeto com o comando <pre><code class="hlbash" data-trim contenteditable>npm start</code></pre></li>
+              <li>Voltar ao terminal e subir o projeto com o comando
+                <pre><code class="hlbash" data-trim contenteditable>npm start</code></pre>
+              </li>
               <li>Alterar a mensagem para “O curso de React é demais”</li>
-            </ol>
-          </section>
+          </ol>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h2>create-react-app</h2>
+          <p>O
+            <i>create-react-app</i> é um pacote que nos permite criar aplicações web utilizando o React
+            <b>sem a necessidade fazer qualquer configuração</b>. Todas as ferramentas necessárias para desenvolvimento e deploy
+            já estão embutidas.</p>
         </section>
 
         <section>
-          <section>
-            <h2>create-react-app</h2>
-            <p>O <i>create-react-app</i> é um pacote que nos permite criar aplicações web utilizando o React <b>sem a necessidade fazer qualquer configuração</b>. Todas as ferramentas necessárias para desenvolvimento e deploy já estão embutidas.</p>
-          </section>
-          
-          <section>
-            <h2>Alguns dos plugins já configurados:</h2>
+          <h2>Alguns dos plugins já configurados:</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/postcss/autoprefixer" target="_blank">auto-prefixer</a>
+            </li>
+            <li>
+              <a href="https://github.com/eslint/eslint" target="_blank">eslint</a>
+            </li>
+            <li>
+              <a href="https://github.com/webpack/webpack" target="_blank">webpack</a>
+            </li>
+            <li>
+              <a href="https://github.com/babel/babel" target="_blank">babel</a>
+            </li>
+            <li>
+              <a href="https://github.com/facebook/jest" target="_blank">jest</a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Estrutura do Projeto</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Arquivo</th>
+                <th>Descrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <small>README.md</small>
+                </td>
+                <td>
+                  <small>Arquivo de orientações do create-react-app. Está em inglês.</small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <small>node_modules/</small>
+                </td>
+                <td>
+                  <small>Todas as dependências necessárias para o projeto.</small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <small>package.json</small>
+                </td>
+                <td>
+                  <small>Arquivo de descrição do projeto. Possui informações como o nome, autor, versão e as dependências.</small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <small>public/</small>
+                </td>
+                <td>
+                  <small>Diretório que possui os arquivos públicos do seu projeto. Contém o html inicial.</small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <small>src/</small>
+                </td>
+                <td>
+                  <small>Pasta onde está contido todos os recursos do projeto, arquivos de imagem, css, javascript e afins.</small>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Componentes Padrões</h2>
+          <p>
+            <small>Para que o desenvolvedor não comece a desenvolver os componentes do zero, o projeto padrão já vem criado com
+              alguns componentes para inspirar e servir como exemplo:</small>
+          </p>
+          <div id="left">
             <ul>
-              <li><a href="https://github.com/postcss/autoprefixer" target="_blank">auto-prefixer</a></li>
-              <li><a href="https://github.com/eslint/eslint" target="_blank">eslint</a></li>
-              <li><a href="https://github.com/webpack/webpack" target="_blank">webpack</a></li>
-              <li><a href="https://github.com/babel/babel" target="_blank">babel</a></li>
-              <li><a href="https://github.com/facebook/jest" target="_blank">jest</a></li>
+              <li>App.css</li>
+              <li>App.js</li>
+              <li>App.test.js</li>
+              <li>index.css</li>
+              <li>index.js</li>
+              <li>logo.svg</li>
             </ul>
-          </section>
+          </div>
+          <div id="right">
+            <img width="550" data-src="https://cdn-images-1.medium.com/max/1600/1*S1tkR_QoaT8sqcIDsUnLjw.png">
+          </div>
+        </section>
 
-          <section>
-            <h2>Estrutura do Projeto</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>Arquivo</th>
-                  <th>Descrição</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><small>README.md</small></td>
-                  <td><small>Arquivo de orientações do create-react-app. Está em inglês.</small></td>
-                </tr>
-                <tr>
-                  <td><small>node_modules/</small></td>
-                  <td><small>Todas as dependências necessárias para o projeto.</small></td>
-                </tr>
-                <tr>
-                  <td><small>package.json</small></td>
-                  <td><small>Arquivo de descrição do projeto. Possui informações como o nome, autor, versão e as dependências.</small></td>
-                </tr>
-                <tr>
-                  <td><small>public/</small></td>
-                  <td><small>Diretório que possui os arquivos públicos do seu projeto. Contém o html inicial.</small></td>
-                </tr>
-                <tr>
-                  <td><small>src/</small></td>
-                  <td><small>Pasta onde está contido todos os recursos do projeto, arquivos de imagem, css, javascript e afins.</small></td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+        <section>
+          <h2>Package.json</h2>
+          <p>O package.json é o arquivo que descreve a sua aplicação. Ele contém informações importantes, como o nome do projeto,
+            autor, data, versão, e-mail e a declaração de suas dependências.</p>
+        </section>
 
-          <section>
-            <h2>Componentes Padrões</h2>
-            <p><small>Para que o desenvolvedor não comece a desenvolver os componentes do zero, o projeto padrão já vem criado com alguns componentes para inspirar e servir como exemplo:</small></p>
-            <div id="left">
-              <ul>
-                <li>App.css</li>
-                <li>App.js</li>
-                <li>App.test.js</li>
-                <li>index.css</li>
-                <li>index.js</li>
-                <li>logo.svg</li>
-              </ul>
-            </div>
-            <div id="right">
-              <img width="550" data-src="https://cdn-images-1.medium.com/max/1600/1*S1tkR_QoaT8sqcIDsUnLjw.png">
-            </div>
-          </section>
-
-          <section>
-            <h2>Package.json</h2>
-            <p>O package.json é o arquivo que descreve a sua aplicação. Ele contém informações importantes, como o nome do projeto, autor, data, versão, e-mail e a declaração de suas dependências.</p>
-          </section>
-
-          <section>
-            <pre><code class="hljson" data-trim contenteditable>
+        <section>
+          <pre><code class="hljson" data-trim contenteditable>
               {
                 "dependencies": {
                   "react": "^15.5.4",
@@ -253,90 +486,284 @@
                 }
               }
             </code></pre>
-          </section>
-
-          <section>
-            <h2>Comandos npm</h2>
-            <table class="ctable">
-              <thead>
-                <tr>
-                  <th>Comando</th>
-                  <th>O que faz?</th>
-                  <th>Resultado</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>start</td>
-                  <td>Inicia o servidor de desenvolvimento</td>
-                  <td>Na porta 3000 e abre o navegador automaticamente</td>
-                </tr>
-                <tr>
-                  <td>test</td>
-                  <td>Inicia a execução dos testes</td>
-                  <td>Executa os testes utilizando o Jest e exibe os resultados no próprio console</td>
-                </tr>
-                <tr>
-                  <td>run build</td>
-                  <td>Reúne o aplicativo em arquivos estáticos para produção</td>
-                  <td>Compila, traduz, minifica os recursos da aplicação e gera arquivos estáticos</td>
-                </tr>
-                <tr>
-                  <td>run eject</td>
-                  <td>Remove a dependência do “react-scripts” e copia explicitamente as ferramentas de build, configurações e scripts dentro do diretório da aplicação</td>
-                  <td>Remove a dependência do “react-scripts” e deixa tudo manual para controle do desenvolvedor</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section>
-            <img data-src="images/ciclo-create-react-app.png" />
-          </section>
-
         </section>
 
         <section>
-          <section><h1>Exercício 2</h1></section>
-          <section>
-            <h2>Objetivo</h2>
-            <p>Criar um novo componente na aplicação</p>
-          </section>
-          <section>
-            <ol>
-              <li>Criar um novo arquivo javascript</li>
-              <li>Usar a estrutura do App.js para montar um novo Componente</li>
-              <li>Inserir o novo componente dentro do App</li>
-              <li>Exibir com sucesso na tela o novo Componente</li>
-            </ol>
-          </section>
+          <h2>Comandos npm</h2>
+          <table class="ctable">
+            <thead>
+              <tr>
+                <th>Comando</th>
+                <th>O que faz?</th>
+                <th>Resultado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>start</td>
+                <td>Inicia o servidor de desenvolvimento</td>
+                <td>Na porta 3000 e abre o navegador automaticamente</td>
+              </tr>
+              <tr>
+                <td>test</td>
+                <td>Inicia a execução dos testes</td>
+                <td>Executa os testes utilizando o Jest e exibe os resultados no próprio console</td>
+              </tr>
+              <tr>
+                <td>run build</td>
+                <td>Reúne o aplicativo em arquivos estáticos para produção</td>
+                <td>Compila, traduz, minifica os recursos da aplicação e gera arquivos estáticos</td>
+              </tr>
+              <tr>
+                <td>run eject</td>
+                <td>Remove a dependência do “react-scripts” e copia explicitamente as ferramentas de build, configurações e scripts
+                  dentro do diretório da aplicação</td>
+                <td>Remove a dependência do “react-scripts” e deixa tudo manual para controle do desenvolvedor</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <section>
-          <section>
-            <h2>Componentes React</h2>
-            <p>Há três tipos de componentes React</p>
-            <ol>
-              <li>React.createClass</li>
-              <li>Componentes de classe</li>
-              <li>Componentes sem estado</li>
-            </ol>
-          </section>
-          
-          <section>
-            <h2>Componentes de classe</h2>
-            <p>Todo componente precisa de 3 coisas:</p>
-            <ul>
-              <li>importar o módulo <span class="fragment highlight-blue">React</span> e o <span class="fragment highlight-blue">Component</span> (classes)</li>
-              <li>estender o <span class="fragment highlight-blue">Component</span></li>
-              <li>ter o método <span class="fragment highlight-blue">render()</span> que retorna o HTML que deve ser renderizado</li>
-            </ul>
-          </section>
+          <img data-src="images/ciclo-create-react-app.png" />
+        </section>
 
-          <section>
-            <h2>HTML no JavaScript</h2>
-            <p><small>A sintaxe do JSX nos permite escrever o HTML no JavaScript!</small></p>
-            <pre><code class="hljs" data-trim contenteditable>
+      </section>
+
+      <section>
+        <section>
+          <h1>Exercício 2</h1>
+        </section>
+        <section>
+          <h2>Objetivo</h2>
+          <p>Criar um novo componente na aplicação</p>
+        </section>
+        <section>
+          <ol>
+            <li>Criar um novo arquivo javascript</li>
+            <li>Usar a estrutura do App.js para montar um novo Componente</li>
+            <li>Inserir o novo componente dentro do App</li>
+            <li>Exibir com sucesso na tela o novo Componente</li>
+          </ol>
+        </section>
+      </section>
+
+      <section>
+        <h2>Ciclo de vida de um Componente</h2>
+        <p>
+          <ul style="font-size:25px">
+            <li>
+              <strong>componentWillMount()</strong>:
+              <br /> é chamado antes de ser inserido no DOM
+              <br />
+            </li>
+            <li>
+              <strong>componentDidMount()</strong>:
+              <br /> é chamado depois de ser inserido no DOM
+              <br />
+            </li>
+            <li>
+              <strong>componentWillUnmount()</strong>:
+              <br /> é chamado antes de ser removido do DOM
+              <br />
+            </li>
+            <li>
+              <strong>componentWillReceiveProps()</strong>:
+              <br /> é chamado quando recebe uma propriedade
+              <br />
+            </li>
+            <li>
+              <strong>shouldComponentUpdate()</strong>:
+              <br /> podemos impedir o render() caso retorne
+              <code>false</code> no shouldComponentUpdate()
+              <br />
+            </li>
+            <li>
+              <strong>componentWillUpdate()</strong>:
+              <br /> é chamado antes do render() (mudança de state/props)
+              <br />
+            </li>
+            <li>
+              <strong>componentDidUpdate()</strong>:
+              <br /> é chamado depois do render()
+              <br />
+            </li>
+          </ul>
+        </p>
+      </section>
+
+      <section data-background="images/ciclo.png" data-background-size="55%">
+      </section>
+
+      <section>
+        <h2> Eventos </h2>
+        <p>
+          React tem um controle interno de eventos e só delega evento DOM na raiz da árvore de componentes, depois os eventos são gerenciados
+          pelo próprio React.
+          <br /> Os nomes dos eventos são lowerCamelCase:
+          <br /> onClick, onChange, onTouchStart
+        </p>
+        <div style="text-align:center">
+          <img src="images/eventos.png" style="width:70%" />
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          Refs
+        </h2>
+        <p>
+          Utilizado para acessar diretamente o elemento, por exemplo um elemento DOM ou instância de um componente.
+        </p>
+        <div style="text-align:center">
+          <img src="images/refs.png" style="width:70%" />
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          Comunicação entre componentes pai/filho
+        </h2>
+        <p>
+          Podemos passar aos descendentes funções callback para passar dados ao pai quando forem axecutadas pelo filho.
+        </p>
+        <div style="text-align:center">
+          <img src="images/paifilho.png" style="width:70%" />
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          Usando React junto com outras libs
+        </h2>
+        <p>
+          Para ter certeza que o componente estará no DOM quando for utilizar alguma outra lib, devemos usar o evento componentDidMount()
+        </p>
+      </section>
+
+      <section>
+        <h2 style="font-size: 30px;">
+          Exemplo de Form - componentes controlavéis
+        </h2>
+        <div style="text-align:center">
+          <img src="images/form.png" />
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          SPA - Single Page Application
+        </h2>
+        <p>
+          São aplicações que carregam apenas uma vez a estrutura inicial e depois todas as outras ações/requisições/navegações são
+          feitas via ajax.
+          <br /> Exemplos: Facebook, Gmail
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          Rotas no React.js
+        </h2>
+        <p>
+          Para Rotas é possível utilizar o React-Router
+          <a href="https://github.com/reactjs/react-router" target="_blank"> https://github.com/reactjs/react-router </a>
+        </p>
+        <div style="text-align:center">
+          <img src="images/rotas.png" />
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          Renderização de componentes no servidor
+        </h2>
+        <p>
+          Os componentes React podem ser renderizados no servidor.
+          <br /> Node, Java, .NET, php etc...
+        </p>
+        <div style="text-align:center">
+          <img src="images/server.png" />
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          Arquitetura de desenvolvimento Flux
+        </h2>
+        <div style="text-align:center">
+          <img src="images/flux.png" />
+        </div>
+      </section>
+
+      <section>
+        <h2>
+          Arquitetura de desenvolvimento Flux
+        </h2>
+        <div style="text-align:center">
+          <img src="images/flux2.png" style="width:70%" />
+        </div>
+      </section>
+
+      <section>
+        <h2 style="font-size: 35px;">
+          Desenvolvimento de uma aplicação de exemplo utilizando React.js
+        </h2>
+        <p>
+          prática...
+          <div style="text-align:center">
+            <img src="images/app.png" />
+          </div>
+        </p>
+      </section>
+
+      <section data-background="images/app.png">
+      </section>
+
+      <section>
+        <h2>
+          Quem utiliza React?
+        </h2>
+        <p>
+          Grandes aplicações como Facebook, Instagram, WhatsApp Web, NetFlix,Yahoo Mail, Khan Academy, FlipBoard, BBC, Periscope Web,
+          dentre outras, já utilizam React.js.
+          <br /> No Brasil várias empresas já estão com algum produto com React, por exemplo: Goomer, Globo, Nubank, B2W, Buscapé, Catho, OLX, Pipefy entre outras...
+          <br />
+        </p>
+      </section>
+
+      <section>
+        <section>
+          <h2>Componentes React</h2>
+          <p>Há três tipos de componentes React</p>
+          <ol>
+            <li>React.createClass</li>
+            <li>Componentes de classe</li>
+            <li>Componentes sem estado</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Componentes de classe</h2>
+          <p>Todo componente precisa de 3 coisas:</p>
+          <ul>
+            <li>importar o módulo
+              <span class="fragment highlight-blue">React</span> e o
+              <span class="fragment highlight-blue">Component</span> (classes)</li>
+            <li>estender o
+              <span class="fragment highlight-blue">Component</span>
+            </li>
+            <li>ter o método
+              <span class="fragment highlight-blue">render()</span> que retorna o HTML que deve ser renderizado</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>HTML no JavaScript</h2>
+          <p>
+            <small>A sintaxe do JSX nos permite escrever o HTML no JavaScript!</small>
+          </p>
+          <pre><code class="hljs" data-trim contenteditable>
               class App extends Component { 
                 render() {
                   return (
@@ -353,12 +780,14 @@
                 }
               }
             </code></pre>
-          </section>
+        </section>
 
-          <section>
-            <h2>ReactDOM</h2>
-            <p><small>O ReactDOM é o responsável por fazer a ponte entre o React e o HTML</small></p>
-            <pre><code class="hljs" data-trim contenteditable>
+        <section>
+          <h2>ReactDOM</h2>
+          <p>
+            <small>O ReactDOM é o responsável por fazer a ponte entre o React e o HTML</small>
+          </p>
+          <pre><code class="hljs" data-trim contenteditable>
               import React from 'react';
               import ReactDOM from 'react-dom';
               import './index.css';
@@ -368,19 +797,21 @@
               ReactDOM.render(<App />, document.getElementById('root'));
               registerServiceWorker();
             </code></pre>
-          </section>
+        </section>
 
-          <section>
-            <h2>Só preciso disso?</h2>
-            <p>
-              Sim. Este é o mínimo necessário para se criar um Componente. Para componentes mais complexos, utilizamos <span class="fragment highlight-blue">Estados (States)</span> e <span class="fragment highlight-blue">Propriedades (Props)</span>.
-            </p>
-          </section>
+        <section>
+          <h2>Só preciso disso?</h2>
+          <p>
+            Sim. Este é o mínimo necessário para se criar um Componente. Para componentes mais complexos, utilizamos
+            <span class="fragment highlight-blue">Estados (States)</span> e
+            <span class="fragment highlight-blue">Propriedades (Props)</span>.
+          </p>
+        </section>
 
-          <section>
-            <h2>Propriedades</h2>
-            <p>As propriedades são simples atributos que passamos para nossos componentes!</p>
-            <pre><code class="hljs" data-trim contenteditable>
+        <section>
+          <h2>Propriedades</h2>
+          <p>As propriedades são simples atributos que passamos para nossos componentes!</p>
+          <pre><code class="hljs" data-trim contenteditable>
               class App extends Component {
                 render() {
                   return (
@@ -389,12 +820,12 @@
                 }
               }
             </code></pre>
-          </section>
+        </section>
 
-          <section>
-            <h2>Propriedades</h2>
-            <p>No componente em questão, podemos acessar esta propriedade e usá-la!</p>
-            <pre><code class="hljs" data-trim contenteditable>
+        <section>
+          <h2>Propriedades</h2>
+          <p>No componente em questão, podemos acessar esta propriedade e usá-la!</p>
+          <pre><code class="hljs" data-trim contenteditable>
               class Espelho extends Component {
                 render() {
                   return (
@@ -403,23 +834,29 @@
                 }
               }
             </code></pre>
-          </section>
+        </section>
 
-          <section>
-            <h2>Estados</h2>
-            <p>Estados guardam informações sobre o seu componente durante um período</p>
-            <p><small>Como por exemplo em um componente de relógio: para cada segundo você precisa atualizar o seu estado para poder mostrar a informação correta na tela</small></p>
-          </section>
+        <section>
+          <h2>Estados</h2>
+          <p>Estados guardam informações sobre o seu componente durante um período</p>
+          <p>
+            <small>Como por exemplo em um componente de relógio: para cada segundo você precisa atualizar o seu estado para poder
+              mostrar a informação correta na tela</small>
+          </p>
+        </section>
 
-          <section>
-            <h2>DEMO</h2>
-            <p>Como usar os estados para atualizar um texto de acordo com o input do usuário</p>
-          </section>
+        <section>
+          <h2>DEMO</h2>
+          <p>Como usar os estados para atualizar um texto de acordo com o input do usuário</p>
+        </section>
 
-          <section>
-            <h2>Estados</h2>
-            <p><small>Toda vez que apertamos o botão, alteramos o estado do componente e o <code>render</code> é invocado automaticamente</small></p>
-            <pre><code data-trim contenteditable>
+        <section>
+          <h2>Estados</h2>
+          <p>
+            <small>Toda vez que apertamos o botão, alteramos o estado do componente e o
+              <code>render</code> é invocado automaticamente</small>
+          </p>
+          <pre><code data-trim contenteditable>
               class App extends Component {
                 constructor(props) {
                   super(props);
@@ -445,36 +882,56 @@
                 }
               }
             </code></pre>
-            <p><small><a href="https://gist.github.com/DiegoPinho/b74e1be45fc0b5255e7a26dbdad66daa" target="_blank">Link no Gist</a></small></p>
-          </section>
-
-          <section>
-            <h1>Resumo</h1>
-            <ol>
-              <li><small>Estados e Propriedades não são obrigatórios mas ajudam a criar componentes mais inteligentes</small></li>
-              <li><small>Propriedades são atributos que passamos para os componentes e acessíveis por meio do <code>this.props.nomeDaPropriedade</code></small></li>
-              <li><small>Estados guardam informações sobre um momento específico do componente. É setado no construtor do componente e atualizado por meio do método <code>setState</code>. Suas informações são acessíveis por meio do <code>this.state.nomePropriedade</code></small></li>
-            </ol>
-          </section>
-
+          <p>
+            <small>
+              <a href="https://gist.github.com/leolana/8087c7051af650c2f24c61cfbb87d431" target="_blank">Link no Gist</a>
+            </small>
+          </p>
         </section>
 
         <section>
-          <section><h1>Extra</h1></section>
-          <section>
-            <h2>Como podemos deixar o texto do componente Espelho azul?</h2>
-          </section>
-          <section>
-            <h2>Inline Styles</h2>
-            <p>Os componentes React utilizam atributos bem semelhantes ao que já estamos acostumados, mas são ligeiramente diferentes. No React os atributos são por padrão <i>CamelCase </i>. Por exemplo:</p>
-            <ul>
-              <li>background-color → backgroundColor</li>
-              <li>background-image → backgroundImage</li>
-              <li>allowfullscreen → allowFullScreen </li>
-            </ul>
-          </section>
-          <section>
-            <pre><code data-trim contenteditable>
+          <h1>Resumo</h1>
+          <ol>
+            <li>
+              <small>Estados e Propriedades não são obrigatórios mas ajudam a criar componentes mais inteligentes</small>
+            </li>
+            <li>
+              <small>Propriedades são atributos que passamos para os componentes e acessíveis por meio do
+                <code>this.props.nomeDaPropriedade</code>
+              </small>
+            </li>
+            <li>
+              <small>Estados guardam informações sobre um momento específico do componente. É setado no construtor do componente
+                e atualizado por meio do método
+                <code>setState</code>. Suas informações são acessíveis por meio do
+                <code>this.state.nomePropriedade</code>
+              </small>
+            </li>
+          </ol>
+        </section>
+
+      </section>
+
+      <section>
+        <section>
+          <h1>Extra</h1>
+        </section>
+        <section>
+          <h2>Como podemos deixar o texto do componente Espelho azul?</h2>
+        </section>
+        <section>
+          <h2>Inline Styles</h2>
+          <p>Os componentes React utilizam atributos bem semelhantes ao que já estamos acostumados, mas são ligeiramente diferentes.
+            No React os atributos são por padrão
+            <i>CamelCase </i>. Por exemplo:</p>
+          <ul>
+            <li>background-color → backgroundColor</li>
+            <li>background-image → backgroundImage</li>
+            <li>allowfullscreen → allowFullScreen </li>
+          </ul>
+        </section>
+        <section>
+          <pre><code data-trim contenteditable>
               class Espelho extends Component {
                 render() {
                   return (
@@ -484,118 +941,123 @@
               }
               
               export default Espelho;
-            </pre></code>
-          </section>
+            </pre>
+          </code>
         </section>
+      </section>
 
+      <section>
+        <h1>O que vimos?</h1>
+        <ul>
+          <li>Como criar um projeto do zero React do zero</li>
+          <li>Subir o projeto para desenvolvimento</li>
+          <li>Criar um novo Componente</li>
+          <li>Incluir um Componente dentro do outro</li>
+          <li>Passar propriedades de um Componente para outro</li>
+          <li>Mudar o estado de um Componente</li>
+        </ul>
+      </section>
+
+      <section>
+        <h1>Próximos Passos</h1>
+        <p>
+          <small>Agora que você já conhece o básico do React, é importante continuar estudando</small>
+        </p>
+        <ul>
+          <li>Ciclo de vida</li>
+          <li>Como lidar com eventos</li>
+          <li>Renderização condicional</li>
+        </ul>
+      </section>
+
+      <section>
         <section>
-          <h1>O que vimos?</h1>
+          <h1>Projeto Final</h1>
+        </section>
+        <section>
+          <h2>Objetivo</h2>
+          <p>Criar uma página pessoal utilizando o create-react-app</p>
+        </section>
+        <section>
+          <h2>Exemplo</h2>
+          <p>
+            <a href="https://codepen.io/leolana/full/oyReEy/">Ver exemplo no CodePen</a>
+          </p>
+        </section>
+        <section>
+          <h2>Requisitos</h2>
           <ul>
-            <li>Como criar um projeto do zero React do zero</li>
-            <li>Subir o projeto para desenvolvimento</li>
-            <li>Criar um novo Componente</li>
-            <li>Incluir um Componente dentro do outro</li>
-            <li>Passar propriedades de um Componente para outro</li>
-            <li>Mudar o estado de um Componente</li>
+            <li>A página deve conter pelo menos uma imagem</li>
+            <li>Deve conter pelo menos 3 componentes (além do App.js)</li>
           </ul>
         </section>
-
         <section>
-          <h1>Próximos Passos</h1>
-          <p><small>Agora que você já conhece o básico do React, é importante continuar estudando</small></p>
+          <h2>Desafio</h2>
+          <p>Criar a página de forma responsiva utilizando o
+            <a href="https://react-bootstrap.github.io/" target="_blank">React Bootstrap</a>
+          </p>
+        </section>
+      </section>
+
+      <section style="text-align: left;">
+        <section>
+          <h2>Materiais para estudo</h2>
           <ul>
-            <li>Ciclo de vida</li>
-            <li>Como lidar com eventos</li>
-            <li>Renderização condicional</li>
+            <li>
+              <a href="https://reactjs.org/" target="_blank">Tutorial e documentação oficiais do React</a>
+            </li>
+            <li>
+              <a href="https://github.com/facebookincubator/create-react-app" target="_blank">GitHub: Create-React-App</a>
+            </li>
+            <li>
+              <a href="https://medium.com/code-prestige/configurando-aplica%C3%A7%C3%B5es-react-em-2-minutos-894025cbef82" target="_blank">Artigo: Como começar a sua aplicação React em poucos minutos</a>
+            </li>
           </ul>
         </section>
+      </section>
 
-        <section>
-          <section>
-            <h1>Projeto Final</h1>
-          </section>
-          <section>
-            <h2>Objetivo</h2>
-            <p>Criar uma página pessoal utilizando o create-react-app</p>
-          </section>
-          <section>
-            <h2>Exemplo</h2>
-            <p><a href="https://codepen.io/DiegoPinho/full/MQebWx">Ver exemplo no CodePen</a></p>
-          </section>
-          <section>
-            <h2>Prazo</h2>
-            <p>1 Semana</p>
-          </section>
-          <section>
-            <h2>Requisitos</h2>
-            <ul>
-              <li>A página deve conter pelo menos uma imagem</li>
-              <li>Deve conter pelo menos 3 componentes (além do App.js)</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Desafio</h2>
-            <p>Criar a página de forma responsiva utilizando o <a href="https://react-bootstrap.github.io/" target="_blank">React Bootstrap</a></p>
-          </section>
-          <section>
-            <h2>Entrega</h2>
-            <p>A entrega deve ser feita nesta <a href="https://github.com/codeprestige/curso-introducaoreact/issues/4" target="_blank">issue</a> do projeto no GitHub</p>
-          </section>
-        </section>
+      <section>
+        <h2>Obrigado pela participação!</h2>
+      </section>
 
-        <section style="text-align: left;">
-          <section>
-            <h2>Materiais para estudo</h2>
-            <ul>
-              <li><a href="https://reactjs.org/" target="_blank">Tutorial e documentação oficiais do React</a></li>
-              <li><a href="https://github.com/facebookincubator/create-react-app" target="_blank">GitHub: Create-React-App</a></li>
-              <li><a href="https://medium.com/code-prestige/configurando-aplica%C3%A7%C3%B5es-react-em-2-minutos-894025cbef82" target="_blank">Artigo: Como começar a sua aplicação React em poucos minutos</a></li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <h2>Obrigado pela participação!</h2>
-          <p>Retire o seu certificado clicando <a href="http://certificados.codeprestige.com.br/" target="_blank">aqui</a></p>
-        </section>
-        
-        <section data-background="images/fundo-codeprestige.jpg" class="without-border">
-          <a href="http://codeprestige.com.br" target="_blank">
-            <img data-src="images/logo-branco.png">
-          </a>
-        </section>
-
-      </div>
+      <section data-background="images/fundo-goomer.jpg" class="without-border">
+        <a href="http://www.goomer.com.br" target="_blank">
+          <img data-src="images/logo-branco.png">
+        </a>
+      </section>
 
     </div>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
+  </div>
 
-    <script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
 
-      // More info https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+  <script>
 
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
 
-        // More info https://github.com/hakimel/reveal.js#dependencies
-        dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/search/search.js', async: true },
-          { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true }
-        ]
-      });
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-    </script>
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+        { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+        { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/search/search.js', async: true },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+      ]
+    });
 
-  </body>
+  </script>
+
+</body>
+
 </html>
