@@ -815,7 +815,7 @@
               class App extends Component {
                 render() {
                   return (
-                    <Espelho texto="texto" /></Espelho>
+                    <Example texto="texto" /></Example>
                   );
                 }
               }
@@ -826,7 +826,7 @@
           <h2>Propriedades</h2>
           <p>No componente em questão, podemos acessar esta propriedade e usá-la!</p>
           <pre><code class="hljs" data-trim contenteditable>
-              class Espelho extends Component {
+              class Example extends Component {
                 render() {
                   return (
                     <p>{this.props.texto}</p> 
@@ -876,7 +876,7 @@
                         To get started, edit <code>src/App.js</code> and save to reload.
                       </p>
                       <input value={this.state.input} onChange={(event) => this.setState({input: event.target.value})} />
-                      <Espelho texto={this.state.input}></Espelho>
+                      <Example texto={this.state.input}></Example>
                     </div>
                   );
                 }
@@ -1047,7 +1047,7 @@
           <h1>Extra</h1>
         </section>
         <section>
-          <h2>Como podemos deixar o texto do componente Espelho azul?</h2>
+          <h2>Como podemos deixar o texto do componente Example azul?</h2>
         </section>
         <section>
           <h2>Inline Styles</h2>
@@ -1062,7 +1062,7 @@
         </section>
         <section>
           <pre><code data-trim contenteditable>
-              class Espelho extends Component {
+              class Example extends Component {
                 render() {
                   return (
                     <p style={{"color":"blue"}}>{this.props.texto}</p>
@@ -1070,33 +1070,41 @@
                 }
               }
               
-              export default Espelho;
+              export default Example;
             </pre>
           </code>
         </section>
       </section>
 
       <section>
-        <h1>O que vimos?</h1>
-        <ul>
-          <li>Como criar um projeto do zero React do zero</li>
-          <li>Subir o projeto para desenvolvimento</li>
-          <li>Criar um novo Componente</li>
-          <li>Incluir um Componente dentro do outro</li>
-          <li>Passar propriedades de um Componente para outro</li>
-          <li>Mudar o estado de um Componente</li>
-        </ul>
-      </section>
-
-      <section>
-        <h1>Próximos Passos</h1>
-        <p>
-          <small>Agora que você já conhece o básico do React, é importante continuar estudando</small>
-        </p>
-        <ul>
-          <li>Redux</li>
-          <li>Como lidar com eventos</li>
-        </ul>
+        <section>
+          <h1>Redux</h1>
+          <p>
+            O que é?
+          </p>
+          <ul>
+            <li>Criado por Dan Abramov da arquitetura Flux</li>
+            <li>Biblioteca que serve como um container de estados</li>
+            <li>Segue a arquitetura flux unirecional de dados</li>
+            <li>Single Immutable State Tree (single source of truth)</li>
+            <li>State é read-only e só é mutado com Actions (objeto que representa uma mutação de estado)</li>
+          </ul>
+        </section>
+        <section>
+            <h1>Redux</h1>
+            <p>
+              Como funciona?
+            </p>
+            <p style="text-align:center">
+              <img src="images/redux.png" style="width:70%" />
+            </p>
+        </section>
+        <section>
+            <h1>Redux</h1>
+            <p style="text-align:center">
+              <img src="images/redux-como-funciona.png" style="width:70%" />
+            </p>
+        </section>
       </section>
 
       <section>
