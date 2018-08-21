@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 
-import TodoHeader from './TodoHeader';
-import TodoList from './TodoList';
-import TodoForm from './TodoForm';
+import TodoHeader from "./TodoHeader";
+import TodoList from "./TodoList";
+import TodoForm from "./TodoForm";
 
 import logo from "./logo.svg";
 import "./App.css";
 
 const todoItems = [
-  {index: 1, value: "learn react", done: false},
-  {index: 2, value: "Go shopping", done: true},
-  {index: 3, value: "buy flowers", done: true}
+  { index: 1, value: "learn react", done: false },
+  { index: 2, value: "Go shopping", done: true },
+  { index: 3, value: "buy flowers", done: true }
 ];
 
 class App extends Component {
@@ -21,6 +21,7 @@ class App extends Component {
     this.markTodoDone = this.markTodoDone.bind(this);
     this.state = { todoItems: todoItems };
   }
+
   addItem(todoItem) {
     todoItems.unshift({
       index: todoItems.length + 1,
@@ -29,10 +30,12 @@ class App extends Component {
     });
     this.setState({ todoItems: todoItems });
   }
+
   removeItem(itemIndex) {
     todoItems.splice(itemIndex, 1);
     this.setState({ todoItems: todoItems });
   }
+
   markTodoDone(itemIndex) {
     var todo = todoItems[itemIndex];
     todoItems.splice(itemIndex, 1);
@@ -40,16 +43,26 @@ class App extends Component {
     todo.done ? todoItems.push(todo) : todoItems.unshift(todo);
     this.setState({ todoItems: todoItems });
   }
+
   render() {
     return (
-      <div id="main">
-        <TodoHeader />
-        <TodoList
-          items={this.props.initItems}
-          removeItem={this.removeItem}
-          markTodoDone={this.markTodoDone}
-        />
-        <TodoForm addItem={this.addItem} />
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+        <div id="main">
+          <TodoHeader />
+          <TodoList
+            items={this.state.todoItems}
+            removeItem={this.removeItem}
+            markTodoDone={this.markTodoDone}
+          />
+          <TodoForm addItem={this.addItem} />
+        </div>
       </div>
     );
   }
