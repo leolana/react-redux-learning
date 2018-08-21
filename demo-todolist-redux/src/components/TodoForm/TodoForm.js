@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+
+import { addItem } from './../../actions/todoItem';
 
 import "./TodoForm.css";
 
@@ -12,10 +15,12 @@ class TodoForm extends Component {
   }
   onSubmit(event) {
     event.preventDefault();
+
+    const { dispatch, todoItems } = this.props;
     var newItemValue = this.refs.itemName.value;
     
     if(newItemValue) {
-      this.props.addItem({newItemValue});
+      dispatch(addItem({newItemValue}, todoItems.length + 1));
       this.refs.form.reset();
     }
   }
@@ -29,4 +34,12 @@ class TodoForm extends Component {
   }
 }
 
-export default TodoForm;
+const mapStateToProps = state => {
+  const { todoItems } = state;
+
+  return {
+    todoItems
+  };
+};
+
+export default connect(mapStateToProps)(TodoForm);

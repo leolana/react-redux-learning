@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+
+import { markTodoDone, removeItem } from './../../actions/todoItem';
 
 import "./TodoListItem.css";
 
@@ -9,12 +12,16 @@ class TodoListItem extends Component {
     this.onClickDone = this.onClickDone.bind(this);
   }
   onClickClose() {
+    const { dispatch } = this.props;
+
     var index = parseInt(this.props.index, 10);
-    this.props.removeItem(index);
+    dispatch(removeItem(index));
   }
   onClickDone() {
+    const { dispatch } = this.props;
+
     var index = parseInt(this.props.index, 10);
-    this.props.markTodoDone(index);
+    dispatch(markTodoDone(index));
   }
   render() {
     var todoClass = this.props.item.done ? "done" : "undone";
@@ -36,4 +43,12 @@ class TodoListItem extends Component {
   }
 }
 
-export default TodoListItem;
+const mapStateToProps = state => {
+  const { todoItems } = state;
+
+  return {
+    todoItems
+  };
+};
+
+export default connect(mapStateToProps)(TodoListItem);
