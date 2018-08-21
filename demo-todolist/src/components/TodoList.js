@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import TodoListItem from './TodoListItem';
+import TodoListItem from "./TodoListItem";
 
 import "./TodoList.css";
 
 class TodoList extends Component {
-    render () {
-        const { items } = this.props;
+  render() {
+    const { items } = this.props;
 
-        const todoListItems = items && items.map((item, index) => (
-            <TodoListItem key={index} item={item} index={index} removeItem={this.props.removeItem} markTodoDone={this.props.markTodoDone} />
-        ));
-        
-        return (
-            <ul className="list-group"> {todoListItems} </ul>
-        );
-    }
+    const todoListItems =
+      items &&
+      items.map((item, index) => (
+        <TodoListItem
+          key={index}
+          item={item}
+          index={index}
+          removeItem={this.props.removeItem}
+          markTodoDone={this.props.markTodoDone}
+        />
+      ));
+
+    return <ul className="list-group"> {todoListItems} </ul>;
   }
+}
 
 export default TodoList;

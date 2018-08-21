@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "./TodoListItem.css";
+
 class TodoListItem extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +22,7 @@ class TodoListItem extends Component {
       <li className="list-group-item ">
         <div className={todoClass}>
           <span
-            className="glyphicon glyphicon-ok icon"
+            className="ll-icon ll-icon-ok icon"
             aria-hidden="true"
             onClick={this.onClickDone}
           />

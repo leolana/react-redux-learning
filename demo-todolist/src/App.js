@@ -8,9 +8,9 @@ import logo from "./logo.svg";
 import "./App.css";
 
 const todoItems = [
-  { index: 1, value: "learn react", done: false },
-  { index: 2, value: "Go shopping", done: true },
-  { index: 3, value: "buy flowers", done: true }
+  { index: 1, value: "Aprender react", done: false },
+  { index: 2, value: "Ir a farmácia", done: true },
+  { index: 3, value: "Comprar comida para o cachorro", done: true }
 ];
 
 class App extends Component {

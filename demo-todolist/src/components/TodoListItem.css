@@ -1,0 +1,33 @@
+.ll-icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ll-icon-ok {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ll-icon-ok:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.done .ll-icon-ok:after {
+  color: red;
+}
+
+.undone .ll-icon-ok:after {
+  color: #61dafb;
+}
