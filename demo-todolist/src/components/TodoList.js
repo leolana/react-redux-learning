@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import TodoListItem from './TodoListItem';
 
+import "./TodoList.css";
+
 class TodoList extends Component {
     render () {
         const { items } = this.props;

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import TodoHeader from "./TodoHeader";
-import TodoList from "./TodoList";
-import TodoForm from "./TodoForm";
+import TodoHeader from "./components/TodoHeader";
+import TodoList from "./components/TodoList";
+import TodoForm from "./components/TodoForm";
 
 import logo from "./logo.svg";
 import "./App.css";
