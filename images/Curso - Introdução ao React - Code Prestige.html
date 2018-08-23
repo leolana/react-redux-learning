@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:8000/#/25 -->
+<html lang="pt-br" class=" js no-mobile desktop no-ie chrome chrome68 root-section gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch no-retina fontface domloaded w-800 gt-240 gt-320 gt-480 gt-640 gt-768 lt-1024 lt-1280 lt-1440 lt-1680 lt-1920 no-portrait landscape" id="index-page"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Curso - Introdução ao React - Code Prestige</title>
+  <meta name="description" content="Curso de Introdução ao React da Code Prestige">
+  <meta name="author" content="Leonardo Lana">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="./Curso - Introdução ao React - Code Prestige_files/reveal.css">
+  <link rel="stylesheet" href="./Curso - Introdução ao React - Code Prestige_files/black.css" id="theme">
+  <link rel="stylesheet" href="./Curso - Introdução ao React - Code Prestige_files/zenburn.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="./Curso - Introdução ao React - Code Prestige_files/custom.css">
+  <!-- Custom CSS -->
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script><link rel="stylesheet" type="text/css" href="./Curso - Introdução ao React - Code Prestige_files/paper.css">
+
+  <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]--><script type="text/javascript" src="./Curso - Introdução ao React - Code Prestige_files/highlight.js"></script><script type="text/javascript" src="./Curso - Introdução ao React - Code Prestige_files/search.js"></script><script type="text/javascript" src="./Curso - Introdução ao React - Code Prestige_files/zoom.js"></script><script type="text/javascript" src="./Curso - Introdução ao React - Code Prestige_files/notes.js"></script>
+</head>
+
+<body style="transition: -webkit-transform 0.8s ease 0s;">
+
+  <div class="reveal slide center has-vertical-slides has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="fade">
+    <img src="./Curso - Introdução ao React - Code Prestige_files/react-logo.png" style="position:absolute;right:0;top:0;width:200px;opacity:0.2">
+    <div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.622629);">
+      <section data-background="images/fundo-react.jpg" data-background-image="images/fundo-react.jpg" class="past" style="top: 60px; display: none;" hidden="" aria-hidden="true">
+        <h1>Introdução ao React</h1>
+        <h4>Aprendendo sobre React JS - A biblioteca do Facebook
+          </h4>
+          <p>
+            Instrutor:
+            <a href="https://www.linkedin.com/in/leonardo-lucas-lana/" target="_blank">Leonardo Lana</a>
+          </p>
+          <p>
+            <small>
+              Realização:
+              <a href="http://www.goomer.com.br/" target="_blank">Goomer</a>&nbsp;&nbsp;&nbsp;
+            </small>
+          </p>
+      </section>
+
+      <section data-background="images/fundo-goomer.jpg" class="without-border stack past" data-background-image="images/fundo-goomer.jpg" style="top: 0px; display: none;" data-previous-indexv="0" hidden="" aria-hidden="true">
+        <section style="top: 80px; display: none;" class="" aria-hidden="true">
+          <img height="200" src="./Curso - Introdução ao React - Code Prestige_files/logo-branco.png" data-lazy-loaded="">
+          <p>
+            A Goomer nasceu para ser agente e companheira da evolução dos restaurantes. Acreditamos que a tecnologia não substitui, mas
+            potencializa o trabalho humano.
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 216px; display: none;" hidden="">
+          <h2>Redes Sociais</h2>
+          <p class="links-redessociais">
+            Nos acompanhe nas redes sociais!
+            <br>
+            <a href="https://www.facebook.com/GoomerCardapios/" target="_blank">Facebook</a> -
+            <a href="https://www.youtube.com/channel/UCP9sdKHUKfudeeeCTF3gUDQ" target="_blank">Youtube</a>
+          </p>
+        </section>
+      </section>
+
+      <section class="stack past" style="top: 0px; display: none;" data-previous-indexv="0" hidden="" aria-hidden="true">
+        <section style="top: 143.5px; display: none;" class="" aria-hidden="true">
+          <h2>Instrutor</h2>
+          <div id="left">
+            <img src="./Curso - Introdução ao React - Code Prestige_files/0" data-lazy-loaded="">
+          </div>
+
+          <div id="right">
+            <ul>
+              <li>
+                <b>Nome:</b> Leonardo Lana</li>
+              <li>
+                <b>Idade:</b> 27 anos</li>
+              <li>
+                <b>Minibio:</b> Engenheiro de Software, Agilista na Goomer e eterno estudante.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 216px; display: none;" hidden="">
+          <h2>Redes Sociais</h2>
+          <p class="links-redessociais">
+            Acompanhe o instrutor nas redes sociais!
+            <br>
+            <a href="https://www.facebook.com/leonardo.lana.14" target="_blank">Facebook</a> -
+            <a href="https://medium.com/@leolucaslana" target="_blank">Medium</a> -
+            <a href="https://twitter.com/leolucaslana" target="_blank">Twitter</a> -
+            <a href="https://www.linkedin.com/in/leonardo-lucas-lana/" target="_blank">LinkedIn</a>
+          </p>
+        </section>
+      </section>
+
+      <section class="past" style="top: 172px; display: none;" hidden="" aria-hidden="true">
+        <h2>Requisitos</h2>
+        <ul>
+          <li>
+            <a href="https://nodejs.org/en/" target="_blank">Node (versão &gt; 6 LTS)</a>
+          </li>
+          <li>
+            <a href="https://www.npmjs.com/" target="_blank">npm (versão &gt; 3.x)</a>
+          </li>
+          <li>
+            <a href="https://github.com/facebookincubator/create-react-app" target="_blank">create-react-app</a>
+          </li>
+          <li>Editor de texto</li>
+        </ul>
+      </section>
+
+      <section class="past" style="top: 130.5px; display: none;" hidden="" aria-hidden="true">
+        <h2> Aprender JavaScript </h2>
+        <p style="font-size:25px">
+          Bibliotecas/Frameworks JavaScript estão sempre surgindo, então antes de tudo você deve aprender JavaScript de verdade!!!
+        </p>
+        <ul class="lista" style="font-size:20px">
+          <li>Não se limitar ao que aprendeu na faculdade ou no trabalho</li>
+          <li>Não se limitar ao que aprendeu na faculdade ou no trabalho</li>
+          <li>Ler Livros/artigos/blogs especializados </li>
+          <li>Seguir/aprender padrões desenvolvimento</li>
+          <li>Acompanhar a comunidade JavaScript</li>
+          <li>Estudar/Ler os repositórios no GitHub de projetos JavaScript </li>
+          <li>Participe de grupos JavaScript</li>
+          <li>Pratique - Escreva Código</li>
+        </ul>
+      </section>
+
+      <section class="stack past" style="top: 0px; display: none;" data-previous-indexv="0" hidden="" aria-hidden="true">
+        <section style="top: 135px; display: none;" class="" aria-hidden="true">
+          <h2>Conhecendo React.js</h2>
+          <p>
+            React é uma biblioteca open-source desenvolvida pelo Facebook, para construção de interfaces(Componentes) em JavaScript com
+            alta performance que permite composição e modularização de uma maneira muito simples.
+          </p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 94.5px; display: none;" hidden="">
+          <h2> Conhecendo React.js </h2>
+          <ul style="font-size:20px">
+            <li>Versão atual: 16.X</li>
+            <li>Criada por: Jordan Walke, engenheiro do Facebook</li>
+            <li>Primeiro release: Maio de 2013 na JSConf US</li>
+            <li>Utilizado por grandes empresas: Facebook, Instagram, Netflix, Sony etc...</li>
+            <li>Criação de interfaces com JavaScript</li>
+            <li>Interface reflete o estado da aplicação</li>
+            <li>Criação de componentes reutilizáveis de forma declarativa, modular e de fácil composição</li>
+            <li>Alta performance </li>
+            <li>Padronização de desenvolvimento</li>
+            <li>Fácil manutenção</li>
+            <li>Permite renderização no servidor - bom para SEO</li>
+            <li>Ecossistema moderno de desenvolvimento (Node, npm, babel, webpack, gulp etc... )</li>
+            <li>Taxa de adoção crescendo muito rápida pela comunidade JavaScript</li>
+            <li>Tudo é JavaScript</li>
+          </ul>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 93px; display: none;" hidden="">
+          <h1>Mas pra que serve?</h1>
+          <p>
+            <small>O React foi desenvolvido com a seguinte missão:</small>
+          </p>
+          <p>
+            <i>"Como construir grandes aplicações com muitos dados que mudam frequentemente?"</i>
+          </p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;" hidden="">
+          <ul>
+            <li>Focar somente na View</li>
+            <li>Utilizar o Virtual DOM</li>
+            <li>Trabalhar com componentes</li>
+          </ul>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;" hidden="">
+          <h2>
+            SPA - Single Page Application
+          </h2>
+          <p>
+            São aplicações que carregam apenas uma vez a estrutura inicial e depois todas as outras ações/requisições/navegações são
+            feitas via ajax.
+            <br> Exemplos: Facebook, Gmail
+          </p>
+        </section>
+      </section>
+
+      <section class="stack past" style="top: 0px; display: none;" data-previous-indexv="0" hidden="" aria-hidden="true">
+        <section style="top: 131px; display: none;" class="" aria-hidden="true">
+          <h1>Legal, mas... Como tudo isso funciona?</h1>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 157px; display: none;" hidden="">
+          <h1>Como já dizia o Jack:</h1>
+          <p>“Vamos por Partes”</p>
+        </section>
+      </section>
+
+      <section class="past" style="top: 176px; display: none;" hidden="" aria-hidden="true">
+        <h2> Estrututa básica de um componente</h2>
+        <p>
+          Antes de começar abra sua mente para alguns conceitos um pouco difícies de aceitar no começo ...
+        </p>
+      </section>
+
+      <section data-background-video="images/mib.mp4" data-background-video-loop="" class="past" style="top: 283px; display: none;" hidden="" aria-hidden="true">
+        <p>
+          Empty your mind...
+        </p>
+      </section>
+
+      <section class="past" style="top: 28px; display: none;" hidden="" aria-hidden="true">
+        <h2> Estrututa básica de um componente</h2>
+        <p style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/basico.png" style="width:70%">
+        </p>
+      </section>
+
+      <section class="past" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+        <h2>JSX</h2>
+        <p style="text-align:center">HTML dentro do JavaScript, como assim? </p>
+        <img src="./Curso - Introdução ao React - Code Prestige_files/html.gif" style="width:100%">
+      </section>
+
+      <section class="past" style="top: 134px; display: none;" hidden="" aria-hidden="true">
+        <h2>JSX</h2>
+        <img src="./Curso - Introdução ao React - Code Prestige_files/jsx.png" style="width:100%">
+      </section>
+
+
+      <section data-background="images/basico2.png" data-background-image="images/basico2.png" class="past" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+        <h2>JSX</h2>
+        <img src="./Curso - Introdução ao React - Code Prestige_files/basico2.png" style="width:100%">
+      </section>
+
+      <section class="past" style="top: 10px; display: none;" hidden="" aria-hidden="true">
+        <h2>JSX</h2>
+        <ul>
+          <li>Opcional</li>
+          <li>É um XML para facilitar a criação dos componentes </li>
+          <li>É convertido para JavaScript</li>
+          <li>Parece HTML, mas possui algumas regras diferentes
+            <ul>
+              <li>todas tags devem ser fechadas</li>
+              <li>atributos são case-sensitive: maxLength</li>
+              <li>class fica: className</li>
+              <li>for fica: htmlFor</li>
+              <li>style recebe um objeto literal:
+                <br>&lt;h1 style={{color: "red"}}&gt;</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="past" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+        <h2>JSX</h2>
+        <p>
+          As expressões javascript são avaliadas entre { }
+        </p>
+        <div style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/jsx-exp.png" style="width:70%">
+        </div>
+      </section>
+
+      <section class="past" style="top: 81px; display: none;" hidden="" aria-hidden="true">
+        <h2>JSX</h2>
+        <p>
+          Exemplo de iteração
+        </p>
+        <div style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/iteracao.png" style="width:70%">
+        </div>
+      </section>
+
+      <section class="past" style="top: 198px; display: none;" hidden="" aria-hidden="true">
+        <h2>Conceitos do React.js</h2>
+        <ul>
+          <li>Virtual DOM</li>
+          <li> Props -
+            <code>this.props</code>
+          </li>
+          <li> State -
+            <code>this.state</code>
+          </li>
+        </ul>
+      </section>
+
+      <section class="past" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+        <h2>Entendendo o Virtual DOM</h2>
+        <p>
+          O Virtual DOM é uma representação leve em memória do DOM.
+          <br> A cada mudança de estado o React renderiza o componente novamente, mas para uma melhor performance ele utiliza
+          o virtual DOM.
+        </p>
+        <p> A cada mudança de estado:</p>
+        <ul>
+          <li> Cria uma nova árvore virtual DOM</li>
+          <li> Faz um diff com a virtual DOM antiga </li>
+          <li> Atualiza a árvore DOM nativa somente onde ocorreu alguma mudança</li>
+        </ul>
+      </section>
+
+      <section class="past" style="top: 78.5px; display: none;" hidden="" aria-hidden="true">
+        <h2> State e Props </h2>
+        <p>
+          Através das propriedades que componentes passam dados para seus filhos. (
+          <code>this.props</code>).
+          <br> Props devem ser
+          <strong>read-only</strong>.
+          <br> Componentes podem ter estados para gerenciar alguma lógica interna (
+          <code>this.state</code>). Somente use
+          <code>this.setState</code> para atualizar um estado. Toda vez* que atualiza o estado o
+          <code>render</code> é chamado.
+        </p>
+      </section>
+
+      <section class="past" style="top: 0px; display: none;" hidden="" aria-hidden="true">
+        <h2>Composição</h2>
+        <p>
+          Através da composição podemos montar componentes complexos que são divididos em componentes menores e mais simples.
+          <br>
+          <code>this.props.children</code>
+        </p>
+        <div style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/composicao.png" style="width:70%">
+        </div>
+      </section>
+
+      <section class="past" style="top: 216px; display: none;" hidden="" aria-hidden="true">
+        <h2> Fazendo Build do React.js </h2>
+        <p>
+          </p><ul>
+            <li>gulp</li>
+            <li>webpack</li>
+          </ul>
+        <p></p>
+      </section>
+
+      <section class="stack past" style="top: 0px; display: none;" data-previous-indexv="2" hidden="" aria-hidden="true">
+        <section style="top: 257px; display: none;" class="past" hidden="" aria-hidden="true">
+          <h1>Exercício 1</h1>
+        </section>
+        <section class="past" style="top: 243px; display: none;" hidden="" aria-hidden="true">
+          <h2>Objetivo</h2>
+          <p>Criar um aplicativo com o create-react-app</p>
+        </section>
+        <section class="" style="top: 37px; display: none;" aria-hidden="true">
+          <ol>
+            <li>Abrir o terminal</li>
+            <li>Escolher um diretório</li>
+            <li>Executar o comando
+              <pre><code class="hlbash hljs dsconfig" data-trim="" contenteditable=""><span class="hljs-built_in"><span class="hljs-built_in">create-react-app</span></span> <span class="hljs-string"><span class="hljs-string">nome_do_projeto</span></span></code></pre>
+              </li><li>Fazer networking enquanto ele cria o seu projeto =)</li>
+              <li>Abrir o projeto no seu editor de texto</li>
+              <li>Voltar ao terminal e subir o projeto com o comando
+                <pre><code class="hlbash hljs livecodeserver" data-trim="" contenteditable="">npm <span class="hljs-built_in">start</span></code></pre>
+              </li>
+              <li>Alterar a mensagem para “O curso de React é demais”</li>
+          </ol>
+        </section>
+      </section>
+
+      <section class="stack past" style="top: 0px; display: none;" data-previous-indexv="1" hidden="" aria-hidden="true">
+        <section style="top: 134px; display: none;" class="past" hidden="" aria-hidden="true">
+          <h2>create-react-app</h2>
+          <p>O
+            <i>create-react-app</i> é um pacote que nos permite criar aplicações web utilizando o React
+            <b>sem a necessidade fazer qualquer configuração</b>. Todas as ferramentas necessárias para desenvolvimento e
+            deploy já estão embutidas.</p>
+        </section>
+
+        <section class="" style="top: 105px; display: none;" aria-hidden="true">
+          <h2>Alguns dos plugins já configurados:</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/postcss/autoprefixer" target="_blank">auto-prefixer</a>
+            </li>
+            <li>
+              <a href="https://github.com/eslint/eslint" target="_blank">eslint</a>
+            </li>
+            <li>
+              <a href="https://github.com/webpack/webpack" target="_blank">webpack</a>
+            </li>
+            <li>
+              <a href="https://github.com/babel/babel" target="_blank">babel</a>
+            </li>
+            <li>
+              <a href="https://github.com/facebook/jest" target="_blank">jest</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 58.5px; display: none;" hidden="">
+          <h2>Estrutura do Projeto</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Arquivo</th>
+                <th>Descrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <small>README.md</small>
+                </td>
+                <td>
+                  <small>Arquivo de orientações do create-react-app. Está em inglês.</small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <small>node_modules/</small>
+                </td>
+                <td>
+                  <small>Todas as dependências necessárias para o projeto.</small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <small>package.json</small>
+                </td>
+                <td>
+                  <small>Arquivo de descrição do projeto. Possui informações como o nome, autor, versão e as dependências.</small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <small>public/</small>
+                </td>
+                <td>
+                  <small>Diretório que possui os arquivos públicos do seu projeto. Contém o html inicial.</small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <small>src/</small>
+                </td>
+                <td>
+                  <small>Pasta onde está contido todos os recursos do projeto, arquivos de imagem, css, javascript e afins.</small>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 52px; display: none;" hidden="">
+          <h2>Componentes Padrões</h2>
+          <p>
+            <small>Para que o desenvolvedor não comece a desenvolver os componentes do zero, o projeto padrão já vem criado
+              com alguns componentes para inspirar e servir como exemplo:</small>
+          </p>
+          <div id="left">
+            <ul>
+              <li>App.css</li>
+              <li>App.js</li>
+              <li>App.test.js</li>
+              <li>index.css</li>
+              <li>index.js</li>
+              <li>logo.svg</li>
+            </ul>
+          </div>
+          <div id="right">
+            <img width="550" src="./Curso - Introdução ao React - Code Prestige_files/1_S1tkR_QoaT8sqcIDsUnLjw.png" data-lazy-loaded="">
+          </div>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;" hidden="">
+          <h2>Package.json</h2>
+          <p>O package.json é o arquivo que descreve a sua aplicação. Ele contém informações importantes, como o nome do
+            projeto, autor, data, versão, e-mail e a declaração de suas dependências.</p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;" hidden="">
+          <pre><code class="hljson hljs" data-trim="" contenteditable="">{
+  <span class="hljs-attr">"dependencies"</span>: {
+    <span class="hljs-attr">"react"</span>: <span class="hljs-string">"^15.5.4"</span>,
+    <span class="hljs-attr">"react-dom"</span>: <span class="hljs-string">"^15.5.4"</span>
+  },
+  <span class="hljs-attr">"scripts"</span>: {
+    <span class="hljs-attr">"start"</span>: <span class="hljs-string">"react-scripts start"</span>,
+    <span class="hljs-attr">"build"</span>: <span class="hljs-string">"react-scripts build"</span>,
+    <span class="hljs-attr">"test"</span>: <span class="hljs-string">"react-scripts test --env=jsdom"</span>,
+    <span class="hljs-attr">"eject"</span>: <span class="hljs-string">"react-scripts eject"</span>
+  }
+}</code></pre>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;" hidden="">
+          <h2>Comandos npm</h2>
+          <table class="ctable">
+            <thead>
+              <tr>
+                <th>Comando</th>
+                <th>O que faz?</th>
+                <th>Resultado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>start</td>
+                <td>Inicia o servidor de desenvolvimento</td>
+                <td>Na porta 3000 e abre o navegador automaticamente</td>
+              </tr>
+              <tr>
+                <td>test</td>
+                <td>Inicia a execução dos testes</td>
+                <td>Executa os testes utilizando o Jest e exibe os resultados no próprio console</td>
+              </tr>
+              <tr>
+                <td>run build</td>
+                <td>Reúne o aplicativo em arquivos estáticos para produção</td>
+                <td>Compila, traduz, minifica os recursos da aplicação e gera arquivos estáticos</td>
+              </tr>
+              <tr>
+                <td>run eject</td>
+                <td>Remove a dependência do “react-scripts” e copia explicitamente as ferramentas de build, configurações
+                  e scripts dentro do diretório da aplicação</td>
+                <td>Remove a dependência do “react-scripts” e deixa tudo manual para controle do desenvolvedor</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;" hidden="">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/ciclo-create-react-app.png" data-lazy-loaded="">
+        </section>
+
+      </section>
+
+      <section class="stack past" style="top: 0px; display: block;" data-previous-indexv="2" hidden="" aria-hidden="true">
+        <section style="top: 257px; display: none;" class="past" hidden="" aria-hidden="true">
+          <h1>Exercício 2</h1>
+        </section>
+        <section class="past" style="top: 243px; display: none;" hidden="" aria-hidden="true">
+          <h2>Objetivo</h2>
+          <p>Criar um novo componente na aplicação</p>
+        </section>
+        <section class="" style="top: 195px; display: block;" aria-hidden="true">
+          <ol>
+            <li>Criar um novo arquivo javascript</li>
+            <li>Usar a estrutura do App.js para montar um novo Componente</li>
+            <li>Inserir o novo componente dentro do App</li>
+            <li>Exibir com sucesso na tela o novo Componente</li>
+          </ol>
+        </section>
+      </section>
+
+      <section class="past" style="top: 3px; display: block;" hidden="" aria-hidden="true">
+        <h2>Ciclo de vida de um Componente</h2>
+        <p>
+          </p><ul style="font-size:25px">
+            <li>
+              <strong>componentWillMount()</strong>:
+              <br> é chamado antes de ser inserido no DOM
+              <br>
+            </li>
+            <li>
+              <strong>componentDidMount()</strong>:
+              <br> é chamado depois de ser inserido no DOM
+              <br>
+            </li>
+            <li>
+              <strong>componentWillUnmount()</strong>:
+              <br> é chamado antes de ser removido do DOM
+              <br>
+            </li>
+            <li>
+              <strong>componentWillReceiveProps()</strong>:
+              <br> é chamado quando recebe uma propriedade
+              <br>
+            </li>
+            <li>
+              <strong>shouldComponentUpdate()</strong>:
+              <br> podemos impedir o render() caso retorne
+              <code>false</code> no shouldComponentUpdate()
+              <br>
+            </li>
+            <li>
+              <strong>componentWillUpdate()</strong>:
+              <br> é chamado antes do render() (mudança de state/props)
+              <br>
+            </li>
+            <li>
+              <strong>componentDidUpdate()</strong>:
+              <br> é chamado depois do render()
+              <br>
+            </li>
+          </ul>
+        <p></p>
+      </section>
+
+      <section data-background="images/ciclo.png" data-background-size="55%" data-background-image="images/ciclo.png" class="present" style="top: 330px; display: block;">
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 76px; display: block;">
+        <h2> Eventos </h2>
+        <p>
+          React tem um controle interno de eventos e só delega evento DOM na raiz da árvore de componentes, depois os eventos são gerenciados
+          pelo próprio React.
+          <br> Os nomes dos eventos são lowerCamelCase:
+          <br> onClick, onChange, onTouchStart
+        </p>
+        <div style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/eventos.png" style="width:70%">
+        </div>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 36px; display: block;">
+        <h2>
+          Refs
+        </h2>
+        <p>
+          Utilizado para acessar diretamente o elemento, por exemplo um elemento DOM ou instância de um componente.
+        </p>
+        <div style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/refs.png" style="width:70%">
+        </div>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2>HOC - Higher-Order Components</h2>
+        <p>
+          É uma técnica (pattern) para reusar lógica dos componentes. Ela emerge da natureza de composição do React.
+        </p>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2>
+          Comunicação entre componentes pai/filho
+        </h2>
+        <p>
+          Podemos passar aos descendentes funções callback para passar dados ao pai quando forem axecutadas pelo filho.
+        </p>
+        <div style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/paifilho.png" style="width:70%">
+        </div>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="stack future" style="top: 350px; display: none;">
+        <section style="top: 350px; display: none;">
+          <h1>Projeto 1</h1>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Objetivo</h2>
+          <p>Vamos criar a aplicação de "todo-list" utilizando apenas create-react-app</p>
+        </section>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2>
+          Usando React junto com outras libs
+        </h2>
+        <p>
+          Para ter certeza que o componente estará no DOM quando for utilizar alguma outra lib, devemos usar o evento componentDidMount()
+        </p>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2 style="font-size: 30px;">
+          Exemplo de Form - componentes controlavéis
+        </h2>
+        <div style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/form.png">
+        </div>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2>
+          Rotas no React.js
+        </h2>
+        <p>
+          Para Rotas é possível utilizar o React-Router
+          <a href="https://github.com/reactjs/react-router" target="_blank"> https://github.com/reactjs/react-router </a>
+        </p>
+        <div style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/rotas.png">
+        </div>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2>
+          Renderização de componentes no servidor
+        </h2>
+        <p>
+          Os componentes React podem ser renderizados no servidor.
+          <br> Node, Java, .NET, php etc...
+        </p>
+        <div style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/server.png">
+        </div>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="stack future" style="top: 350px; display: none;">
+        <section style="top: 350px; display: none;">
+          <h2>Componentes React</h2>
+          <p>Há três tipos de componentes React</p>
+          <ol>
+            <li>React.createClass</li>
+            <li>Componentes de classe</li>
+            <li>Componentes sem estado</li>
+          </ol>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Componentes de classe</h2>
+          <p>Todo componente precisa de 3 coisas:</p>
+          <ul>
+            <li>importar o módulo
+              <span class="fragment highlight-blue" data-fragment-index="0">React</span> e o
+              <span class="fragment highlight-blue" data-fragment-index="1">Component</span> (classes)</li>
+            <li>estender o
+              <span class="fragment highlight-blue" data-fragment-index="2">Component</span>
+            </li>
+            <li>ter o método
+              <span class="fragment highlight-blue" data-fragment-index="3">render()</span> que retorna o HTML que deve ser renderizado</li>
+          </ul>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>HTML no JavaScript</h2>
+          <p>
+            <small>A sintaxe do JSX nos permite escrever o HTML no JavaScript!</small>
+          </p>
+          <pre><code class="hljs javascript" data-trim="" contenteditable=""><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{ 
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">classname</span>=<span class="hljs-string">"App"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">classname</span>=<span class="hljs-string">"App-header"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"{logo}"</span> <span class="hljs-attr">classname</span>=<span class="hljs-string">"App-logo"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"logo"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">classname</span>=<span class="hljs-string">"App-title"</span>&gt;</span>Welcome to React<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">classname</span>=<span class="hljs-string">"App-intro"</span>&gt;</span>
+          To get started, edit <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src/App.js<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> and save to reload.
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    );
+  }
+}</span></code></pre>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>ReactDOM</h2>
+          <p>
+            <small>O ReactDOM é o responsável por fazer a ponte entre o React e o HTML</small>
+          </p>
+          <pre><code class="hljs javascript" data-trim="" contenteditable="">  <span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+  <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
+  <span class="hljs-keyword">import</span> <span class="hljs-string">'./index.css'</span>;
+  <span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App'</span>;
+  <span class="hljs-keyword">import</span> registerServiceWorker <span class="hljs-keyword">from</span> <span class="hljs-string">'./registerServiceWorker'</span>;
+  
+  ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">app</span>&gt;</span>, document.getElementById('root'));
+  registerServiceWorker();
+<span class="hljs-tag">&lt;/<span class="hljs-name">app</span>&gt;</span></span></code></pre>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Só preciso disso?</h2>
+          <p>
+            Sim. Este é o mínimo necessário para se criar um Componente. Para componentes mais complexos, utilizamos
+            <span class="fragment highlight-blue" data-fragment-index="0">Estados (States)</span> e
+            <span class="fragment highlight-blue" data-fragment-index="1">Propriedades (Props)</span>.
+          </p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Propriedades</h2>
+          <p>As propriedades são simples atributos que passamos para nossos componentes!</p>
+          <pre><code class="hljs scala" data-trim="" contenteditable=""><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;example texto=<span class="hljs-string">"texto"</span>&gt;&lt;/example&gt;
+    );
+  }
+}</code></pre>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Propriedades</h2>
+          <p>No componente em questão, podemos acessar esta propriedade e usá-la!</p>
+          <pre><code class="hljs scala" data-trim="" contenteditable=""><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;p&gt;{<span class="hljs-keyword">this</span>.props.texto}&lt;/p&gt; 
+    );
+  }
+}</code></pre>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Estados</h2>
+          <p>Estados guardam informações sobre o seu componente durante um período</p>
+          <p>
+            <small>Como por exemplo em um componente de relógio: para cada segundo você precisa atualizar o seu estado para
+              poder mostrar a informação correta na tela</small>
+          </p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>DEMO</h2>
+          <p>Como usar os estados para atualizar um texto de acordo com o input do usuário</p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Estados</h2>
+          <p>
+            <small>Toda vez que apertamos o botão, alteramos o estado do componente e o
+              <code>render</code> é invocado automaticamente</small>
+          </p>
+          <pre><code data-trim="" contenteditable="" class="hljs scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  constructor(props) {
+    <span class="hljs-keyword">super</span>(props);
+    <span class="hljs-keyword">this</span>.state = {
+      input: ''
+    }
+  }
+
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;div classname=<span class="hljs-string">"App"</span> style=<span class="hljs-string">"{{color:"</span> <span class="hljs-keyword">this</span>.state.color}}=<span class="hljs-string">""</span>&gt;
+        &lt;header classname=<span class="hljs-string">"App-header"</span>&gt;
+          &lt;img src=<span class="hljs-string">"{logo}"</span> classname=<span class="hljs-string">"App-logo"</span> alt=<span class="hljs-string">"logo"</span>&gt;
+          &lt;h1 classname=<span class="hljs-string">"App-title"</span>&gt;<span class="hljs-type">Welcome</span> to <span class="hljs-type">React</span>&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;p classname=<span class="hljs-string">"App-intro"</span>&gt;
+          <span class="hljs-type">To</span> get started, edit &lt;code&gt;src/<span class="hljs-type">App</span>.js&lt;/code&gt; and save to reload.
+        &lt;/p&gt;
+        &lt;input value=<span class="hljs-string">"{this.state.input}"</span> onchange=<span class="hljs-string">"{(event)"</span> ==<span class="hljs-string">""</span>&gt; <span class="hljs-keyword">this</span>.setState({input: event.target.value})} /&gt;
+        &lt;example texto=<span class="hljs-string">"{this.state.input}"</span>&gt;&lt;/example&gt;
+      &lt;/div&gt;
+    );
+  }
+}</code></pre>
+          <p>
+            <small>
+              <a href="https://gist.github.com/leolana/8087c7051af650c2f24c61cfbb87d431" target="_blank">Link no Gist</a>
+            </small>
+          </p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h1>Resumo</h1>
+          <ol>
+            <li>
+              <small>Estados e Propriedades não são obrigatórios mas ajudam a criar componentes mais inteligentes</small>
+            </li>
+            <li>
+              <small>Propriedades são atributos que passamos para os componentes e acessíveis por meio do
+                <code>this.props.nomeDaPropriedade</code>
+              </small>
+            </li>
+            <li>
+              <small>Estados guardam informações sobre um momento específico do componente. É setado no construtor do componente
+                e atualizado por meio do método
+                <code>setState</code>. Suas informações são acessíveis por meio do
+                <code>this.state.nomePropriedade</code>
+              </small>
+            </li>
+          </ol>
+        </section>
+
+      </section>
+
+      <section hidden="" aria-hidden="true" class="stack future" style="top: 350px; display: none;">
+        <section style="top: 350px; display: none;">
+          <h2>Static methods</h2>
+          <p>PropTypes</p>
+          <ul>
+            <li>Validar as props que são passadas para os componentes</li>
+            <li>Evitar bugs desnecessários</li>
+            <ul>
+        </ul></ul></section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>PropTypes: Exemplo</h2>
+          <pre style="height: auto !important;
+            margin: 1rem;
+            font-size: 14px;
+            line-height: 20px;
+            white-space: pre-wrap;
+            word-break: break-word;">            <code data-trim="" contenteditable="" class="hljs scala"><span class="hljs-keyword">import</span> <span class="hljs-type">PropTypes</span> from <span class="hljs-symbol">'prop</span>-types';
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeting</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;h1&gt;<span class="hljs-type">Hello</span>, {<span class="hljs-keyword">this</span>.props.name}&lt;/h1&gt;
+    );
+  }
+}
+
+<span class="hljs-type">Greeting</span>.propTypes = {
+  name: <span class="hljs-type">PropTypes</span>.string
+};</code>
+          </pre>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Default Prop Values</h2>
+          <ul>
+            <li>Definir valores default para as props</li>
+            <li>Garantir que a prop terá um valor padrão, caso o Componente não tenha especificado a prop em si.</li>
+            <ul>
+        </ul></ul></section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Default Prop Values: Exemplo</h2>
+          <pre style="height: auto !important;
+            margin: 1rem;
+            font-size: 14px;
+            line-height: 20px;
+            white-space: pre-wrap;
+            word-break: break-word;">          <code data-trim="" contenteditable="" class="hljs scala">  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeting</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+    render() {
+      <span class="hljs-keyword">return</span> (
+        &lt;h1&gt;<span class="hljs-type">Hello</span>, {<span class="hljs-keyword">this</span>.props.name}&lt;/h1&gt;
+      );
+    }
+  }
+  
+  <span class="hljs-comment">// Specifies the default values for props:</span>
+  <span class="hljs-type">Greeting</span>.defaultProps = {
+    name: <span class="hljs-symbol">'Strange</span>r'
+  };
+  
+  <span class="hljs-comment">// Renders "Hello, Stranger":</span>
+  <span class="hljs-type">ReactDOM</span>.render(
+    &lt;greeting&gt;,
+    document.getElementById(<span class="hljs-symbol">'exampl</span>e')
+  );
+&lt;/greeting&gt;</code>
+        </pre>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Default Prop Values: Exemplo com static method</h2>
+          <pre style="height: auto !important;
+            margin: 1rem;
+            font-size: 14px;
+            line-height: 20px;
+            white-space: pre-wrap;
+            word-break: break-word;">          <code data-trim="" contenteditable="" class="hljs scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeting</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  static defaultProps = {
+    name: <span class="hljs-symbol">'strange</span>r'
+  }
+
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;div&gt;<span class="hljs-type">Hello</span>, {<span class="hljs-keyword">this</span>.props.name}&lt;/div&gt;
+    )
+  }
+}</code>
+        </pre>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Initial State</h2>
+          <p>O seu componente pode ter um estado inicial ou props iniciais</p>
+          <pre style="height: auto !important;
+            margin: 1rem;
+            font-size: 14px;
+            line-height: 20px;
+            white-space: pre-wrap;
+            word-break: break-word;">          <code data-trim="" contenteditable="" class="hljs scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+  constructor(props) {
+    <span class="hljs-keyword">super</span>(props);
+    <span class="hljs-keyword">this</span>.state = {count: props.initialCount};
+  }
+  <span class="hljs-comment">// ...</span>
+}</code>
+        </pre>
+        </section>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h1>Performance</h1>
+        <p style="font-size:24px">React depende de algumas otimizações para ser performance, que greralmente está em seguir
+          a style guide do react de boas práticas</p>
+        <ul class="lista" style="font-size:26px">
+          <li>Usar production build</li>
+          <li>Create React App</li>
+          <li>Virtualize Long Lists</li>
+          <li>Evite Reconciliation</li>
+          <li>shouldComponentUpdate em ação</li>
+          <li>O poder de não alterar os dados</li>
+          <li>Use estrutura de dados imutáveis</li>
+        </ul>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="stack future" style="top: 350px; display: none;">
+        <section style="top: 350px; display: none;">
+          <h1>Style</h1>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">-
+          <h2>Como podemos deixar o texto do componente Example azul?</h2>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Inline Styles</h2>
+          <p>Os componentes React utilizam atributos bem semelhantes ao que já estamos acostumados, mas são ligeiramente
+            diferentes. No React os atributos são por padrão
+            <i>CamelCase </i>. Por exemplo:</p>
+          <ul>
+            <li>background-color → backgroundColor</li>
+            <li>background-image → backgroundImage</li>
+            <li>allowfullscreen → allowFullScreen </li>
+          </ul>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>CSS Modules</h2>
+          <p>Habilita o reuso e criação de módulos css que são importados dentro da classe javascript. No qual fica no escopo
+            local do arquivo que referenciou, porém, com um identificador global.</p>
+            <p>Também é possível usar SASS Modules</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Styled components</h2>
+          <p>Toda a criação do CSS estará no javascript. Aliás não haverá mais CSS ou Sass em tempo de desenvolvimento</p>
+          <a href="https://www.styled-components.com/" target="_blank">Vejamos a documentação</a>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <pre><code data-trim="" contenteditable="" class="hljs scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;p style=<span class="hljs-string">"{{"</span><span class="hljs-string">color":"</span><span class="hljs-string">blue"}}"</span>&gt;{<span class="hljs-keyword">this</span>.props.texto}&lt;/p&gt;
+    )
+  }
+}
+
+export <span class="hljs-keyword">default</span> <span class="hljs-type">Example</span>;</code></pre><code data-trim="" contenteditable="">
+          </code>
+        </section>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2>
+          Mas e os dados...
+        </h2>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2>
+          Arquitetura de desenvolvimento Flux
+        </h2>
+        <div style="text-align:center">
+          <img src="./Curso - Introdução ao React - Code Prestige_files/flux.png">
+        </div>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="stack future" style="top: 350px; display: none;">
+        <img src="./Curso - Introdução ao React - Code Prestige_files/redux-logo.png" style="margin: auto;position: absolute;left: 0;top: 0;width: 180px;;min-height: 180px;border: none;box-shadow: none;background: none;">
+        <section style="top: 350px; display: none;">
+          <h2>Redux</h2>
+          <p>
+            O que é?
+          </p>
+          <ul>
+            <li>Criado por Dan Abramov da arquitetura Flux</li>
+            <li>Biblioteca que serve como um container de estados</li>
+            <li>Single Immutable State Tree (single source of truth)</li>
+            <li>State é read-only e só é mutado com Actions (objeto que representa uma mutação de estado)</li>
+          </ul>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Redux</h2>
+          <p>
+            Como funciona?
+          </p>
+          <p style="text-align:center">
+            <img src="./Curso - Introdução ao React - Code Prestige_files/redux.png" style="width:70%">
+          </p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Redux</h2>
+          <p style="text-align:center">
+            <img src="./Curso - Introdução ao React - Code Prestige_files/redux-como-funciona.png" style="width:70%">
+          </p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Actions</h2>
+          <p style="text-align:center">
+            São payloads de informação que é enviado para a sua store.
+          </p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Reducers</h2>
+          <p style="text-align:center">
+            Ele específica uma troca de estado em resposta a action que é enviado para a store.
+          </p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Store</h2>
+          <p style="text-align:center">
+            Se a action representa "o que aconteceu" e o reducer atualiza o estado de acordo com as actions.
+          </p>
+          <p style="text-align:center">
+            A store conecta as actions com os reducers.
+          </p>
+        </section>
+
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Data Flow</h2>
+          <p style="text-align:center">
+            A arquitetura do Redux gira em torno do fluxo unidirecional de dados.
+          </p>
+        </section>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2>Presentational Components vs Container Components</h2>
+        <p style="text-align:center">
+          São patterns para aplicações React.
+        </p>
+        <ul style="font-size: 26px;">
+          <li>Melhorar a separação de conceitos</li>
+          <li>Aumentar reusabilidade</li>
+          <li>Ajudar a extrair "layout components" como Sidebar, Page, ContextMenu</li>
+        </ul>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2>
+          Quem utiliza React?
+        </h2>
+        <p>
+          Grandes aplicações como Facebook, Instagram, WhatsApp Web, NetFlix, Yahoo Mail, Khan Academy, FlipBoard, BBC, Periscope Web,
+          dentre outras, já utilizam React.js.
+          <br> No Brasil várias empresas já estão com algum produto com React, por exemplo: Goomer, Globo, Nubank, B2W,
+          Buscapé, Catho, OLX, Pipefy entre outras...
+          <br>
+        </p>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="stack future" style="top: 350px; display: none;">
+        <section style="top: 350px; display: none;">
+          <h1>Projeto Final</h1>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>Objetivo</h2>
+          <p>Adicionar o redux ao nosso Todo-List</p>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <ol>
+            <li>Adicionar as seguintes dependências</li>
+            <li>Executar o comando no terminal
+              <pre><code class="hlbash hljs dockerfile" data-trim="" contenteditable="">yarn <span class="hljs-keyword">add</span><span class="bash"> prop-types react-redux redux redux-thunk</span></code></pre>
+              </li><li>Fazer networking enquanto as suas dependências são baixadas :)</li>
+          </ol>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <ol>
+            <li>Criar as seguintes pastas dentro da pasta src/</li>
+            <li>actions</li>
+            <li>components</li>
+            <li>constants</li>
+            <li>containers</li>
+            <li>reducers</li>
+            <li>types</li>
+          </ol>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <ul>
+            <li><a href="https://gist.github.com/leolana/fd86cd07a53517d74ae5abde5db1e4f0">Seguir o meu gist no github :)</a></li>
+          </ul>
+        </section>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="stack future" style="top: 350px; display: none;">
+        <section style="top: 350px; display: none;">
+          <h2>
+            EXTRA
+          </h2>
+        </section>
+        <section class="future" aria-hidden="true" style="top: 350px; display: none;">
+          <h2>
+            Static Type Checking
+          </h2>
+          <p>
+            Existem alguns type checkers como <a href="https://flow.org/">Flow</a> e <a href="https://www.typescriptlang.org/">TypeScript</a>.
+            Eles identificam problemas antes de executar o seu código.
+          </p>
+        </section>
+      </section>
+
+      <section style="text-align: left; top: 350px; display: none;" hidden="" aria-hidden="true" class="stack future">
+        <section style="top: 350px; display: none;">
+          <h2><a href="https://github.com/reactrio/material-para-estudos" target="_blank">Material de estudo</a></h2>
+        </section>
+      </section>
+
+      <section hidden="" aria-hidden="true" class="future" style="top: 350px; display: none;">
+        <h2>Obrigado pela participação!</h2>
+      </section>
+
+      <section data-background="images/fundo-goomer.jpg" class="without-border future" data-background-image="images/fundo-goomer.jpg" hidden="" aria-hidden="true" style="top: 350px; display: none;">
+        <a href="http://www.goomer.com.br/" target="_blank">
+          <img data-src="images/logo-branco.png">
+        </a>
+      </section>
+
+    </div>
+
+  <div class="backgrounds"><div class="slide-background past" data-background-hash="images/fundo-react.jpgnullnullnullnullnullnullnullnull" data-loaded="true" style="display: none; background-image: url(&quot;images/fundo-react.jpg&quot;);"></div><div class="slide-background without-border stack past" data-background-hash="images/fundo-goomer.jpgnullnullnullnullnullnullnullnull" data-loaded="true" style="display: none; background-image: url(&quot;images/fundo-goomer.jpg&quot;);"><div class="slide-background present" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div></div><div class="slide-background stack past" data-loaded="true" style="display: none;"><div class="slide-background present" data-loaded="true" style="display: none;"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background stack past" style="display: none;" data-loaded="true"><div class="slide-background present" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack past" style="display: none;" data-loaded="true"><div class="slide-background present" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" data-background-hash="0images/mib.mp4nullnullnullnullnull" style="display: none;" data-loaded="true"><video loop="" data-paused-by-reveal=""><source src="images/mib.mp4"></video></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" data-background-hash="images/basico2.pngnullnullnullnullnullnullnullnull" style="display: none; background-image: url(&quot;images/basico2.png&quot;);" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background stack past" style="display: none;" data-loaded="true"><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background present" style="display: none;" data-loaded="true"></div></div><div class="slide-background stack past" style="display: none;" data-loaded="true"><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background present" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;" data-loaded="true"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack past" style="display: block;" data-loaded="true"><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background past" style="display: none;" data-loaded="true"></div><div class="slide-background present" style="display: block;" data-loaded="true"></div></div><div class="slide-background past" style="display: block;" data-loaded="true"></div><div class="slide-background present" data-background-hash="images/ciclo.png55%nullnullnullnullnullnullnull" data-background-size="55%" style="background-size: 55%; display: block; background-image: url(&quot;images/ciclo.png&quot;);" data-loaded="true"></div><div class="slide-background future" style="display: block;" data-loaded="true"></div><div class="slide-background future" style="display: block;" data-loaded="true"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background future" style="display: none;"></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div><div class="slide-background future" style="display: none;"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background present" style="display: none;"></div></div><div class="slide-background future" style="display: none;"></div><div class="slide-background without-border future" data-background-hash="images/fundo-goomer.jpgnullnullnullnullnullnullnullnull" style="display: none;"></div></div><div class="progress" style="display: block;"><span style="width: 351.02px;"></span></div><aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide"><div class="controls-arrow"></div></button><button class="navigate-right enabled" aria-label="next slide"><div class="controls-arrow"></div></button><button class="navigate-up" aria-label="above slide" disabled="disabled"><div class="controls-arrow"></div></button><button class="navigate-down" aria-label="below slide" disabled="disabled"><div class="controls-arrow"></div></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+      </div><div id="searchinputdiv" class="searchdiv" style="position: absolute; top: 10px; right: 10px; z-index: 10; display: none;"><span><input type="search" id="searchinput" class="searchinput" style="vertical-align: top;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJiSURBVHjatFZNaxNBGH5md+Mmu92NVdKDRipSAyqCghgQD4L4cRe86UUtAQ+eFCxoa4/25EXBFi8eBE+eRPoDhB6KgiiixdAPCEkx2pjvTXadd9yNsflwuyUDD/O+u8PzzDPvzOwyx3EwyCZhwG3gAkp7MnpjgbopjsltcD4gjuXZZKeAR348MYLYTm3LzOs/y3j3JTfZxgXWXmTuwPHIc4VmoOmv5IrI53+AO2DdHLjkDWQ3GoEEVFXtXQOvkSnPWcyUceviLhwbDYv8/XIVj97kse7TodLvZXxYxrPUHkQ1ufXs3FEdybEIxucySOesoNvUgWU1cP3MkCBfTFdw9fGaAMVmRELq7LBw2Q3/FaAxxWIRpw+ZIr/7IouPqzUBiqmdHAv7EuhRAwf1er2Vy4x1jW3b2d5Jfvu5IPp7l2LYbcgCFFNb+FoJ7oBqEAqFMPNqFcmEgVMJDfMT+1tvN0pNjERlMS6QA5pFOKxiKVPFhakPeL3It+WGJUDxt2wFR+JhzI7v5ctkd8DXOZAkCYYxhO+lKm4+Xfqz/rIixBuNBl7eOYzkQQNzqX249mRl6zUgEcYkaJrGhUwBinVdh6IouPzwE6/DL5w4oLkH8y981aDf+uq6hlKpJESiUdNfDZi7/ehG9K6KfiA3pml0PLcsq+cSMTj2NL9ukc4UOmz7AZ3+crkC4mHujFvXNaMFB3bEr8xPS6p5O+jXxq4VZtaen7/PwzrntjcLUE0iHPS1Ud1cdiEJl/8WivZk0wXd7zWOMkeF8s0CcAmkNrC2nvXZDbbbN73ccYnZoH9bfgswAFzAe9/h3dbKAAAAAElFTkSuQmCC" id="searchbutton" class="searchicon" style="vertical-align: top; margin-top: -1px;"></span></div></div>
+
+  <script src="./Curso - Introdução ao React - Code Prestige_files/head.min.js"></script>
+  <script src="./Curso - Introdução ao React - Code Prestige_files/reveal.js"></script>
+
+  <script>
+
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+        { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+        { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/search/search.js', async: true },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+      ]
+    });
+
+  </script>
+
+<script src="./Curso - Introdução ao React - Code Prestige_files/livereload.js" async="" defer=""></script>
+
+</body></html>
